@@ -15,4 +15,17 @@
 ### ⚡dec2
 - i am struggling with grid a little bit , grid col i can handle(using minmax and auto-fit) but how to deal with rows, that i dont know 
 - rows are not easy to predit , i guess i have to fix a definite size for them
-- the solution is `grid-auto-rows: 350px` this makes new cards evrytime with 350px tall
+- the solution is `grid-auto-rows: 350px` this makes new cards evrytime with 350px tall  
+- what is `[class ^="box-"]` in css?
+- `auto-fill vs auto-fit` u  
+
+### ⚡dec3
+- it is required that i should` make notes and videoNotes` in such a manner that i can refer and `revise` them `everyday`  
+- interesting  
+
+      <h1>
+        <div>Text1</div>
+        <div>Text2</div>
+      </h1>
+
+      🔹u should not have a block element inside  a h1 tag, instead use span tag.
