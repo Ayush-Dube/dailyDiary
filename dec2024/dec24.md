@@ -28,4 +28,13 @@
         <div>Text2</div>
       </h1>
 
-      🔹u should not have a block element inside  a h1 tag, instead use span tag.
+      🔹u should not have a block element inside  a h1 tag, instead use span tag.  
+
+### ⚡ dec4
+- `.item:nth-of-type(n)` to select the nth number of element of the class `.item`    
+
+- started OOPS
+    - abstraction 
+    - inheritance
+    - enscapsulation 
+    - polymorphism    
