@@ -54,64 +54,91 @@
   - lorem picsome
   - json placeholder
 
+
+#### Four hash Heading 
 <details>
-<summary>✨objects in Javascript before oops</summary>
-- objects in js  
- 
-      ---  
-      // console.log('hi hello')
+    <summary>👉objects in Javascript before oops</summary>
+    - objects in js  
+    
+          ---  
+          // console.log('hi hello')
 
-      const person1 = {
-          //properties- k:v
-          name: "adam",
-          lastName : "wonders",
-          age :31,
-          
-          //methods r functions
-          sayHi : ()=>console.log(`hello there i am '${name}'`),
-          sayHi2 : ()=>console.log(`hello there i am  '${this.name}'`),
-          sayHi3 : ()=>console.log(`${this}`),
-          sayhi4(){return this}
-      } 
+          const person1 = {
+              //properties- k:v
+              name: "adam",
+              lastName : "wonders",
+              age :31,
+              
+              //methods r functions
+              sayHi : ()=>console.log(`hello there i am '${name}'`),
+              sayHi2 : ()=>console.log(`hello there i am  '${this.name}'`),
+              sayHi3 : ()=>console.log(`${this}`),
+              sayhi4(){return this}
+          } 
 
-      const person2 = {
-          //properties- k:v
-          name : "Bri",
-          lastName : "Moon",
-          gender : 'female',
-          age :25,
-          //methods r functions
-          sayHi : function(){console.log(`hello there i am '${name}'`)},
-          sayHi2 : function(){console.log(`hello i m '${this.name}'`)}  ,
-          sayHi3(){console.log(`combined method also ${this}`)}
-      } 
+          const person2 = {
+              //properties- k:v
+              name : "Bri",
+              lastName : "Moon",
+              gender : 'female',
+              age :25,
+              //methods r functions
+              sayHi : function(){console.log(`hello there i am '${name}'`)},
+              sayHi2 : function(){console.log(`hello i m '${this.name}'`)}  ,
+              sayHi3(){console.log(`combined method also ${this}`)}
+          } 
 
-      person1.sayHi()
-      person1.sayHi2()
-      person1.sayHi3()
-      console.log('               ')
+          person1.sayHi()
+          person1.sayHi2()
+          person1.sayHi3()
+          console.log('               ')
 
-      person2.sayHi()
-      person2.sayHi2()
-      person2.sayHi3()
+          person2.sayHi()
+          person2.sayHi2()
+          person2.sayHi3()
 
-      console.log('               ')
+          console.log('               ')
 
-      console.log(person1.age)
-      console.log(person2.lastName)
-      console.log(person2.age)
-      console.log(person1.name)
-      console.log('               ')
-      console.log(person1.sayhi4())
-      // so key takeways
-      // arrow function can cause problem for methods inside a Object, u have write function syntax properly
-      // can combine k:v and fun1(){ur func code} 
-      // avoid using ()=> syntax in objects
-      //observe how I got the data of this keyword
+          console.log(person1.age)
+          console.log(person2.lastName)
+          console.log(person2.age)
+          console.log(person1.name)
+          console.log('               ')
+          console.log(person1.sayhi4())
+          // so key takeways
+          // arrow function can cause problem for methods inside a Object, u have write function syntax properly
+          // can combine k:v and fun1(){ur func code} 
+          // avoid using ()=> syntax in objects
+          //observe how I got the data of this keyword
 
 </details>
 
 
 <details>
-<summary>Next</summary>
+<summary>👉Next</summary>
+      
+    ---  
+    start from here
+    copy this template
+    ---
 </details>
+
+
+<details>
+<summary>👉2 files of python</summary>
+      
+    ---  
+    start from here
+    copy this template
+    ---
+</details>
+
+### ⚡dec6
+
+- use of constructor in js and python
+- setInterval takes a function 
+- if u hav closed the terminal and see what task were running through ur terminal   
+  `tasklist`   
+  `tasklist /FI "IMAGENAME eq j*"`  
+   taskill `pid`
+- oops in python
