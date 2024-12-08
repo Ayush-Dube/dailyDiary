@@ -215,7 +215,29 @@
 
       car3.start(); // Ford FocusCorolla is starting...
       car4.start(); // Nissan Altima is starting...
-      car5.start(); // Chevrolet Malibu is starting...
+      car5.start(); // Chevrolet Malibu is starting...  
+
+      ✨in Python  
+       
+       class Car:
+          def __init__(self, make, model, year):
+            self.make = make
+            self.model = model
+            self.year = year
+
+          def start(self):
+            print(f"{self.make} {self.model} is starting...")  
+             
+      car6 = Car("BMW", "3 Series", 2018)
+
+- in python Classes `__`hides the variable/function.
+- `def __init__(self,para1,para2)` is auto function that runs immediatley as the class object is created.   
+
+      
+      
+      
+      
+
 
 
 
