@@ -142,3 +142,87 @@
   `tasklist /FI "IMAGENAME eq j*"`  
    taskill `pid`
 - oops in python
+
+
+### ⚡dec8
+- return vs print in python or any language
+- without Constructor
+
+      ✨ in Javascript  
+
+        const car1 = {
+        make: "Toyota",
+        model: "Corolla",
+        year: 2023,
+        start: function() {
+          console.log(`${this.make} ${this.model} is starting...`);
+        }
+      };  
+
+      console.log(car1.make); // Toyota
+      car1.start(); // Toyota Corolla is starting...  
+
+      👉This approach is fine for one or two objects but becomes repetitive when you need multiple objects with similar properties.    
+
+      ✨in python
+       
+       car2 = {
+         "make": "Honda",
+        "model": "Civic",
+        "year": 2022,
+        "start": lambda: print("Honda Civic is starting...")
+        }
+
+        car2["start"]()  # Honda Civic is starting...
+
+      👉In Python, you cannot directly define a method (def) inside a dictionary like in JavaScript objects. However, you can define it using a callable lambda or  by assigning a function explicitly to a key in the dictionary.
+
+
+      ✨  
+        'def start_audi():
+            print("Audi A4 is starting...")
+      
+
+            car7 = {
+          "make": "Audi",
+          "model": "A4",
+          "year": 2017,
+          "start": start_audi
+            }
+
+       car7["start"]()  # Audi A4 is starting...
+
+- with Constructor  
+
+      ✨in Javascript  
+
+      class Car {
+        constructor(make, model, year) {
+          this.make = make;
+          this.model = model;
+           this.year = year;
+         }
+
+      start() {
+        console.log(`${this.make} ${this.model} is starting...`);
+          }
+      }
+
+
+      const car3 = new Car("Ford", "Focus", 2021);
+      const car4 = new Car("Nissan", "Altima", 2020);
+      const car5 = new Car("Chevrolet", "Malibu", 2019);
+
+      car3.start(); // Ford FocusCorolla is starting...
+      car4.start(); // Nissan Altima is starting...
+      car5.start(); // Chevrolet Malibu is starting...
+
+
+
+- Comparison
+  |Constructor|No Constructor|
+  |---|---|
+  |Resuseable class simplifies object creation|Each Objecy is manually created.|
+  |Consistency is maintained|Properties and methods are written repeatedly for each object.|
+  |changes can be made in one place(in class) instead of evry object|Code--> difficult to maintain|
+
