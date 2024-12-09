@@ -162,7 +162,8 @@
       console.log(car1.make); // Toyota
       car1.start(); // Toyota Corolla is starting...  
 
-      👉This approach is fine for one or two objects but becomes repetitive when you need multiple objects with similar properties.    
+      👉This approach is fine for one or two objects but becomes   
+      repetitive when you need multiple objects with similar properties.    
 
       ✨in python
        
@@ -175,7 +176,8 @@
 
         car2["start"]()  # Honda Civic is starting...
 
-      👉In Python, you cannot directly define a method (def) inside a dictionary like in JavaScript objects. However, you can define it using a callable lambda or  by assigning a function explicitly to a key in the dictionary.
+      👉In Python, you cannot directly define a method (def) inside a dictionary like in    JavaScript objects.  
+      However, you can define it using a callable lambda or  by assigning a function explicitly to a key in the dictionary.
 
 
       ✨  
@@ -231,15 +233,9 @@
       car6 = Car("BMW", "3 Series", 2018)
 
 - in python Classes `__`hides the variable/function.
-- `def __init__(self,para1,para2)` is auto function that runs immediatley as the class object is created.   
-
-      
-      
-      
-      
-
-
-
+- `def __init__(self,para1,para2)` is auto function that runs immediatley as the class object is created.     
+     
+ 
 
 - Comparison
   |Constructor|No Constructor|
@@ -248,3 +244,47 @@
   |Consistency is maintained|Properties and methods are written repeatedly for each object.|
   |changes can be made in one place(in class) instead of evry object|Code--> difficult to maintain|
 
+
+### ⚡dec9
+- #### var let const in Js    
+
+  <details>
+    <summary>Click</summary>
+    
+        ✨   
+        <script>  
+          var name = 'adam';
+          console.log(typeof(name), name)   // string adam
+
+          name = 7
+          console.log(typeof(name) , name)  // string 7 
+          👉why still string , lets explore with let and const
+
+
+          let name1 = 'bob';
+          console.log(name1 , typeof(name1))  // bob  string          
+
+          name1 = 9 
+          // let name1 = 9   //redeclaration not allowed 
+          //let name1 = 'bob2'  // reassignment is allowed
+          console.log(name1,typeof(name1));  
+  
+          const name2 = 'Chinook' 
+          console.log(name2,typeof(name2)); 
+          
+          // name2 = 11; // error  
+          const name2 = 11 // error --> already been declared 
+          console.log(name2, typeof(name2)) 
+  
+          //therfore typeScript is usefull       
+        
+        </script>  
+  </details>      
+
+
+- try except finally in python
+
+- #### abstraction and enscapsulation go hand in hand  
+  - 
+
+- can we re assign values to a class object ,how to prevent it?  
