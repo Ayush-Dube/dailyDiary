@@ -288,3 +288,21 @@
   - 
 
 - can we re assign values to a class object ,how to prevent it?  
+
+### ⚡ dec11
+
+- due to fever ,i lost my streak of commiting continously ,anyways
+
+- glass morphism
+
+    <details>
+    <summary>GlassMorphism</summary>
+             
+      🔹background-color: transparent;  
+         backdrop-filter: blur(10px)   // higher value higher blur
+
+      🔹rgba change the 'a'     
+         if you want to use some other color;
+      🔹 also use -webkit format for other browsers   
+
+    </details>
