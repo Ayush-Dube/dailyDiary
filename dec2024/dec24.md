@@ -306,3 +306,10 @@
       🔹 also use -webkit format for other browsers   
 
     </details>
+
+
+### ⚡dec12
+
+- id in python
+- default parameters 
+- visualisation of class execution in python
