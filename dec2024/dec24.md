@@ -310,8 +310,51 @@
 
 ### ⚡dec12
 
-- id in python
+- `id` in python provide the address of the object.
 
 - default parameters 
 - visualisation of class execution in python
-- __private 
+- `__` private 
+- in cmd `. code`
+
+
+### ⚡dec13
+- <details>
+    <summary>Topic1</summary>
+
+      🔹wrtie ur thing here  
+        
+  </details>
+
+
+- <details>
+    <summary>Topic2</summary>
+
+      🔹wrtie ur 2nd thing here  
+        
+  </details>
+- <details>
+    <summary>Jupyter</summary>
+
+     ### **Jupyter Notebook vs. JupyterLab**    "non- block syntax"
+
+    | **Feature** | **Jupyter Notebook**| **JupyterLab**|
+    |--------------------|---------------------------------------|---------------------------------------|
+    | **UI**| Simple, single-document.| Modern, multi-tab, customizable.|
+    | **File Handling** | Basic.| Advanced with drag-and-drop.|
+    | **Extensions** | Limited, manual setup.| Built-in manager, easier to use.|
+    | **Performance**| Lightweight, beginner-friendly.| Heavier, ideal for multitasking.|
+    | **Terminal**| Not supported.| Fully integrated (see below).|
+
+    ### **How to Use Terminal in JupyterLab**
+    1. Open **JupyterLab** (`jupyter lab`).
+    2. In the file browser, click **“+”** or the launcher.
+    3. Under **"Other"**, select **Terminal**.
+    4. Run shell commands directly within the terminal tab.        
+  </details>
+
+### ⚡dec14
+
+- explored decorator
+- `__name__ =__main__` 
+-
