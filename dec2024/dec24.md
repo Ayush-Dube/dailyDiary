@@ -355,6 +355,28 @@
 
 ### ⚡dec14
 
-- explored decorator
+- explored decorator 
 - `__name__ =__main__` 
--
+- assert in python for validation
+
+### 
+- win+x uu 
+- <details>
+    <summary>input str/nostr</summary>
+
+      def wrtdis(v):
+        res = str(v)
+        print(res)
+
+      but if u give input withput " " , it will consider it as a unknow variable.  
+      undefined variable.
+
+
+      to tackle this ,  
+      at the time of taking input change it there itself. 
+
+      var1 = str(input())
+
+      wrtdis(var1)          
+        
+  </details>
