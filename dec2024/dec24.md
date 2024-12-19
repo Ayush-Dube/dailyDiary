@@ -380,3 +380,13 @@
       wrtdis(var1)          
         
   </details>
+
+
+### ⚡dec15
+
+- `echo ~` to echo the pwd in linux.
+- |interactive|Problem's|Videoral|
+  |---|---|---|
+  |LabEx|HackerRank|tutedude|
+  |ProgramizPro|HackerEarth|30daysCode|
+  |Excersim||FreeCodeCamp|
