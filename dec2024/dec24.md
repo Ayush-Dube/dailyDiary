@@ -382,7 +382,7 @@
   </details>
 
 
-### ⚡dec15
+### ⚡dec19
 
 - `echo ~` to echo the pwd in linux.
 - |interactive|Problem's|Videoral|
@@ -390,3 +390,7 @@
   |LabEx|HackerRank|tutedude|
   |ProgramizPro|HackerEarth|30daysCode|
   |Excersim||FreeCodeCamp|
+
+### ⚡dec20
+- facinf dilama strong complusion to buy labEx for interatice learning ,please forget labEx for a while promise once learnt backend ,we will have it
+- start adding for labex
