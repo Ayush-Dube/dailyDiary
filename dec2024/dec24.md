@@ -393,4 +393,26 @@
 
 ### ⚡dec20
 - facinf dilama strong complusion to buy labEx for interatice learning ,please forget labEx for a while promise once learnt backend ,we will have it
-- start adding for labex
+- start adding for labex fee
+
+
+### ⚡dec22
+
+- <details>
+    <summary>Try,Except</summary>
+
+      🔹universal error handler   
+          
+        try:  
+          print(1/0)
+        except Exception as e:
+          print(f"an error occured:{e}")
+        
+  </details>
+
+- <details>
+    <summary>super().__init__()</summary>
+
+      🔹wrtie ur thing here  
+        
+  </details>
