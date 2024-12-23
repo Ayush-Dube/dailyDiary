@@ -416,3 +416,91 @@
       🔹wrtie ur thing here  
         
   </details>
+
+
+### ⚡dec23  
+
+- <details>
+    <summary>✨oops Inheritance</summary>
+
+      class A:
+        def speak(self):
+         print("from class A")
+
+      class B(A):
+        def speak(self):
+          print("from class B")
+
+      a1 = A()
+      b1 = B()
+
+      a1.speak()  # Calls the speak method from class A
+      b1.speak()  # Calls the overridden speak method from class B   
+
+    x, But i dont want the method of class A not class B when speak()  
+     
+      class A:
+        def speak(self):
+          print("from class A")
+
+      class B(A):
+        def speak(self):
+          A.speak(self)  # Explicitly call A's speak method
+
+      a1 = A()
+      b1 = B()
+
+      a1.speak()  # Output: from class A
+      b1.speak()  # Output: from class A 
+
+    method2:-use super()
+
+      class A:
+        def speak(self):
+           print("from class A")
+
+      class B(A):
+         def speak(self):
+           super().speak()  # Call the parent class's method
+
+      a1 = A()
+      b1 = B()
+
+      a1.speak()  # Output: from class A
+      b1.speak()  # Output: from class A   
+
+   method3 -Do Not Define speak in B  
+
+      class A:
+        def speak(self):
+          print("from class A")
+
+      class B(A):
+        pass  # Inherit everything from A without modification
+
+      a1 = A()
+      b1 = B()
+
+      a1.speak()  # Output: from class A
+      b1.speak()  # Output: from class A   
+
+   method4-  Dynamically Assign speak from A to B
+
+       class A:
+        def speak(self):
+          print("from class A")
+
+        class B(A):
+          pass
+
+      B.speak = A.speak  # Dynamically assign A's speak method to B
+
+      a1 = A()
+      b1 = B()
+
+      a1.speak()  # Output: from class A
+      b1.speak()  # Output: from class A    
+
+        
+  </details>
+
