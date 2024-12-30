@@ -504,3 +504,44 @@
         
   </details>
 
+### ⚡dec24
+
+- python interpretor
+    - `ctlr + D`;`ctrl +Z`;`quit()`;`exit()`
+    - interpretor reads a python file 
+    - interpretor on its own  can also be used for simple instructions.
+
+
+- <details>
+    <summary>👉MRO and using Super</summary>
+
+      🔹observe the below code  
+       
+        
+  </details>
+
+### ⚡dec25
+  
+
+### ⚡dec30
+- learning mysql in linux terminal
+- service vs systemtl ?
+- mysql was not starting in labEx,because there was a mysql already installed and it was contradicting the new version.
+- to run a `.sh` file   
+    - `bash fileName.sh `  make sure it has proper permission.
+- make adocker image of mysql database on your own.
+- `pip list ` in cmd.
+- what is virtual everything 
+- `if __name__ =__main__`
+
+- way to practice sql 
+  - labEx proper env along with ide and web porting.
+  - play with dockerr terminal
+  - Incus try it for 30 mins.  
+- <details>
+    <summary>make adictionary from 2 arrays</summary>
+
+      🔹
+  
+  
+</details>
