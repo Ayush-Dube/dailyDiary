@@ -622,4 +622,4 @@
   </details>
 
 
-- laern alot...GOD SPEED🏹
+- learn alot...GOD SPEED🏹
