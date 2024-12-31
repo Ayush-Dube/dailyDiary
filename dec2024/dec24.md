@@ -542,6 +542,84 @@
     <summary>make adictionary from 2 arrays</summary>
 
       🔹
-  
-  
+    
 </details>
+
+### ⚡dec30  
+- 🖥️ Using mysql and python on labEx machine ...did database things✨  
+- <details>
+  <summary>sql cmnds</summary>
+          
+      - INSERT INTO table_name (column1, column2, column3)  
+        VALUES 
+        (value1a, value2a, value3a),
+        (value1b, value2b, value3b);   
+
+      - SELECT * FROM sidetable ORDER BY id;
+      - UPDATE sidetable
+        SET id = 103
+        WHERE id = 102 AND age = 29;
+    
+  
+  </details>
+- <details>
+    <summary> checkout the code here...</summary>
+
+      🔹wrtie ur thing here 
+
+      👉MariaDB [test_DB]> show TABLES;
+      +-------------------+
+      | Tables_in_test_DB |
+      +-------------------+
+      | maintable         |
+      | sidetable         |
+      +-------------------+
+      2 rows in set (0.000 sec)
+
+      👉MariaDB [test_DB]> desc maintable;desc sidetable;
+      +-------+-------------+------+-----+---------+-------+
+      | Field | Type        | Null | Key | Default | Extra |
+      +-------+-------------+------+-----+---------+-------+
+      | id    | int(11)     | YES  |     | NULL    |       |
+      | name  | varchar(50) | YES  |     | NULL    |       |
+      | game  | varchar(50) | YES  |     | NULL    |       |
+      +-------+-------------+------+-----+---------+-------+
+      3 rows in set (0.001 sec)
+
+      +--------+--------------+------+-----+---------+-------+
+      | Field  | Type         | Null | Key | Default | Extra |
+      +--------+--------------+------+-----+---------+-------+
+      | id     | int(11)      | YES  |     | NULL    |       |
+      | age    | int(11)      | YES  |     | NULL    |       |
+      | role   | varchar(100) | YES  |     | NULL    |       |
+      | salary | varchar(100) | YES  |     | NULL    |       |
+      +--------+--------------+------+-----+---------+-------+
+      4 rows in set (0.000 sec)
+
+
+
+      👉MariaDB [test_DB]> SELECT * FROM maintable;SELECT * FROM sidetable;
+      +------+-------+-------+
+      | id   | name  | game  |
+      +------+-------+-------+
+      |  100 | aname | agame |
+      |  101 | bname | bgame |
+      |  102 | cname | cgame |
+      |  103 | dname | dgame |
+      +------+-------+-------+
+      4 rows in set (0.000 sec)
+
+      +------+------+------------+----------+
+      | id   | age  | role       | salary   |
+      +------+------+------------+----------+
+      |  100 |   23 | full-stack | $99,000  |
+      |  101 |   25 | front-end  | $79,000  |
+      |  102 |   27 | back-end   | $109,000 |
+      |  103 |   29 | dev-ops    | $99,999  |
+      +------+------+------------+----------+
+      4 rows in set (0.000 sec) 
+        
+  </details>
+
+
+- laern alot...GOD SPEED🏹
