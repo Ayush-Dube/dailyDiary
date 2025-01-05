@@ -132,3 +132,18 @@
           time.sleep(0.5) 
 
 - next
+
+
+### ⚡jan5
+
+- my-sql-connector is like a ssh agent (maybe not) that helps u to connect to a db server that has a  
+  ip address and password.
+
+#### Windows enviornment variable 
+
+- suppose u have just now installed python a, node and c++ on your computer and now you want to run   
+  run various .py, .js ,.cpp   
+
+      ✨
+      EDIT SYSTEM Environment VARIABLE 
+      
