@@ -147,3 +147,24 @@
       ✨
       EDIT SYSTEM Environment VARIABLE 
       
+
+
+### ⚡jan6
+
+
+- sql   
+    - create table  
+
+            CREATE TABLE products (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                name VARCHAR(100) NOT NULL,
+                price DECIMAL(10,2) NOT NULL,
+                description TEXT,
+                weight FLOAT,
+                in_stock BOOLEAN,
+                created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+                last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+                  );  
+
+- `DESCRIBE products;`
+- 
