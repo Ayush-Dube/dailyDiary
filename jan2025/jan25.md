@@ -167,4 +167,15 @@
                   );  
 
 - `DESCRIBE products;`
+
+
+### ⚡jan9
+
+- using `gitignore` file to exclude folders that u do not require to upload to github.  
 - 
+
+### ⚡jan10
+
+- mysql 
+    - `--` for comments
+    - limit with offset is used , when dealing with `pagination` on a web page .
