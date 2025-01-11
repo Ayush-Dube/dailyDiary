@@ -179,3 +179,11 @@
 - mysql 
     - `--` for comments
     - limit with offset is used , when dealing with `pagination` on a web page .
+
+### ⚡ jan 11
+
+    SELECT title, price, publication_year
+    FROM books
+    WHERE genre = 'Technical'
+    AND publication_year >= 2022
+    ORDER BY price DESC;
