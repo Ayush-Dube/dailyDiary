@@ -187,3 +187,9 @@
     WHERE genre = 'Technical'
     AND publication_year >= 2022
     ORDER BY price DESC;
+
+
+### ⚡jan 12
+
+- difference bwteen schema , database, table  
+- 
