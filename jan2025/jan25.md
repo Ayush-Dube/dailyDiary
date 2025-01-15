@@ -256,3 +256,25 @@
         print(f"Gravitational force at destination: {grav_force:.2f} N")
 
 </details>
+
+### ⚡jan15
+
+  - Lists in Python are created using square brackets [], with items separated by commas  
+  - You can add items to a list using the append() method or insert items at a specific position  
+   using the insert()  
+  - To remove items, you can use the remove() method or the del statement:
+
+  tuple()
+
+  - Tuples are created using parentheses ().
+  - However, unlike lists, tuples are immutable.   
+    This means you cannot change their contents after creation:
+    
+        >>> person = ("Alice", 25, "Engineer")
+        >>> name, age, occupation = person  # Tuple unpacking   
+ 
+ - Without the comma, Python will interpret it as a regular value in parentheses.
+   
+        >>> single_item_tuple = (42,)
+        >>> print(type(single_item_tuple))
+        <class 'tuple'>
