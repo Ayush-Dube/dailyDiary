@@ -360,3 +360,41 @@
             else:
                 print("Invalid choice. Please try again.")
 </details>
+
+
+### ⚡jan20
+
+<details>
+<summary>repeated Count</summary>
+
+    from typing import List
+
+    def count_clone_soldier(matrix: List[List[str]]):
+        # Create an empty dictionary to store the count of each soldier ID
+        clone_count = {}
+
+        # Iterate over each row in the matrix
+        for row in matrix:
+            # Iterate over each soldier ID in the current row
+            for soldier_id in row:
+                # Check if the soldier ID is already present in the clone_count dictionary
+                if soldier_id in clone_count:
+                    # If the soldier ID is already present, increment its count by 1
+                    clone_count[soldier_id] += 1
+                else:
+                    # If the soldier ID is not present, initialize its count to 1
+                    clone_count[soldier_id] = 1
+
+        # Iterate over the clone_count dictionary to decrement the count of each soldier ID by 1
+        for soldier_id in clone_count:
+            clone_count[soldier_id] -= 1
+
+        # Remove any soldier IDs from the clone_count dictionary whose count is 0 after decrementing
+        clone_count = {k: v for k, v in clone_count.items() if v != 0}
+
+        # Return the clone_count dictionary containing the count of each soldier ID
+        return clone_count
+
+
+
+</details>
