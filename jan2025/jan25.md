@@ -398,3 +398,18 @@
 
 
 </details>
+
+### ⚡jan24  
+-  `+=`  its not =+, if u use = then + its tring to assign that value.
+- using `set()` to a variable  
+
+      - usr_set_variable = set() 
+        usr_set_variable.add('apple') 
+        usr_set_variable.add('apple') 
+        usr_set_variable.add('apple') 
+        usr_set_variable.add('banana') 
+        usr_set_variable.add('banana')
+
+        print(usr_set_variable)
+
+        only apple and banana will print 
