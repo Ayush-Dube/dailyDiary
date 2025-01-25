@@ -413,3 +413,12 @@
         print(usr_set_variable)
 
         only apple and banana will print 
+
+### ⚡jan25
+
+- json in python 
+    - only double quates
+    - parsed
+    - json.load vs json.loads
+
+- 
