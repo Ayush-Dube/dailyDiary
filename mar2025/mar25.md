@@ -17,5 +17,14 @@
    - crud 
    - on  json data file 
    - using with open file operation
-   
+
+#### dsa 
+- O(1) fastest
+- O(n) linear
+- O(n^2) quadratic
+- O(logn) curved 
+
+### ⚡mar20
+
+   - JDK JRE JVM 
     
