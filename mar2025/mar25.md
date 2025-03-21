@@ -28,3 +28,9 @@
 
    - JDK JRE JVM 
     
+
+### ⚡mar21
+
+- art.py 5 10    
+  passing arguements along with a python file   
+- wap to find size of a code or file
