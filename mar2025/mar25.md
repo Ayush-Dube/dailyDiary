@@ -34,3 +34,16 @@
 - art.py 5 10    
   passing arguements along with a python file   
 - wap to find size of a code or file
+
+### ⚡ mar24
+
+- jdk-->jre-->jvm
+
+         public class UrCode{
+
+            public static void main(string[] args){
+
+               
+            }
+         }
+         
