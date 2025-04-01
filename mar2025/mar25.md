@@ -47,3 +47,7 @@
             }
          }
          
+###   ⚡mar30
+- in vs code
+   - installed code runner 
+   - installed print preview  
