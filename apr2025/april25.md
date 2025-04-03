@@ -16,3 +16,20 @@
     - learn blender
     - learn C
     - learn Java
+
+### ⚡2apr
+
+- Ctel + D to select one by one similar value in vs code.
+
+- forgot to write return 0; but still running,bcoz inbuilt in newer versions of C.
+
+
+### ⚡3apr
+- Java
+   -  Object-oriented hai → Har cheez class aur object ke around ghoomti hai.
+
+   -  Static vs Non-Static → Agar alag-alag objects ke liye alag data chahiye, to static mat use kar.
+
+   -  this tabhi kaam karega jab object bana hoga, static ke andar this nahi chalega.
+
+   - Constructor use kar, setInfo() ki zaroorat nahi padti.
