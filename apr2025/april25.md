@@ -33,3 +33,10 @@
    -  this tabhi kaam karega jab object bana hoga, static ke andar this nahi chalega.
 
    - Constructor use kar, setInfo() ki zaroorat nahi padti.
+
+
+### ⚡4apr
+
+- use time command before each python main.py ; time gcc ./a.out , to find the time taken for execution;
+
+- for using return cariage use `\r,end =" "` , the end ="" is important .
