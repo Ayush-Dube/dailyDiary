@@ -40,3 +40,7 @@
 - use time command before each python main.py ; time gcc ./a.out , to find the time taken for execution;
 
 - for using return cariage use `\r,end =" "` , the end ="" is important .
+
+### ⚡5apr
+- how to finf time taken in windows terminal , by a code to get executed.(in the same way we do in linux with time python main.py)
+-calling a class inside a class in java.
