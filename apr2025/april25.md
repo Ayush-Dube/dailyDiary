@@ -43,4 +43,6 @@
 
 ### ⚡5apr
 - how to finf time taken in windows terminal , by a code to get executed.(in the same way we do in linux with time python main.py)
--calling a class inside a class in java.
+- calling a class inside a class in java.
+- what if no internet and u try to push the code to github.
+- 2 terminals chating.
