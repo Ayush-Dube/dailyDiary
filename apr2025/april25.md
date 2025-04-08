@@ -46,3 +46,9 @@
 - calling a class inside a class in java.
 - what if no internet and u try to push the code to github.
 - 2 terminals chating.
+
+
+
+### ⚡8apr
+- `Alt+0176` ° for degree symbol
+- sequence of if-else statement matters , refer FizzBuzz Program.
