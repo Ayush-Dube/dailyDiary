@@ -52,3 +52,66 @@
 ### ⚡8apr
 - `Alt+0176` ° for degree symbol
 - sequence of if-else statement matters , refer FizzBuzz Program.
+- working with git and gitignore
+    - observe that git init command in terminal creates a .git folder (hidden),which confirms git has intialised here
+    - now make a .gitignore file and inside mention the path and file format ,use wildcards.
+---      
+- Keep your repos clean with .gitignore.
+- Use git add -f to include ignored files only when necessary.
+- For bigger projects, structure .gitignore by language and file type.
+---
+
+- Noticed extra files (`.class`, `.out`) being pushed — these are **compiled files**, not needed in the repo.
+- touch a gitignore file and add the paths or file extensions to be ignored.
+
+        Pattern	Effect
+        *.class	-->Ignores .class files only in the current folder
+        **/*.class -->Ignores .class files in all folders and subfolders
+---
+-  Only if u want ,Remove Already Tracked Compiled Files
+
+        git rm --cached *.class
+        git rm --cached *.out
+        git commit -m "Removed compiled files and added .gitignore"
+        git push
+---
+- If Ignored Files Are Needed Later
+
+        git add -f MyProgram.class
+        git commit -m "Added MyProgram.class for debugging"
+        git push
+
+    To remove it again:
+
+        git rm --cached MyProgram.class
+        git commit -m "Removed .class file"
+        git push
+---
+
+### ⚡9apr
+
+- `!= `not equal to
+- ` gcc number_compare.c -o nb;./nb`
+-  for loop in python to print even number using modulus , i++and continue statement;  
+- nested `if`s ,if statement placed inside another if or else block.
+- inPython some code  
+
+        import time
+        print('test')
+
+        try:
+            def loopme(int):
+                for i in range(int):
+                    if(i%2==0):
+                        print(f'{i} is Even.')                    
+                    else:
+                        print(i)
+
+            # loopme(20)
+            loopme('m')
+                
+        except:
+            print("Something went wrong")
+---
+- 
+            
