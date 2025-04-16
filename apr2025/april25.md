@@ -113,5 +113,72 @@
         except:
             print("Something went wrong")
 ---
-- 
-            
+
+### ⚡apr10
+
+- insert keyboard key in eclipse IDE. Cursor problem.
+
+
+### ⚡apr14
+
+- Measure-Command {} - in Windows  
+  - `java HelloWorld; Measure-Command { java HelloWorld > $null }  `
+  - ✅ Does redirecting to $null / Out-Null affect timing?  
+     Short answer:    
+    👉 Thoda sa, haan — lekin usually negligible
+    Detailed answer below 👇      
+
+        🔍 Why could it affect timing?
+        When you run:
+
+       
+        Measure-Command { java HelloWorld }
+        The Java process runs
+
+        Its output is sent to the console
+
+        Console I/O (writing to the screen) takes a small but real amount of time
+        (especially if output is large or if the terminal is slow)
+
+        When you do:
+
+       
+        Measure-Command { java HelloWorld | Out-Null }
+        or       
+        Measure-Command { java HelloWorld > $null }
+        The Java process runs the same
+
+        But its output is discarded immediately
+
+        No time wasted printing to console
+        (output stream gets redirected and discarded in memory)
+
+        ➡️ This saves a tiny bit of time — typically milliseconds unless:
+
+        The program prints a lot
+
+        The console is slow
+
+        Or the system is under heavy load
+
+- Say your program takes 2.000 seconds to compute + 0.100 seconds to print 
+
+    Measure-Command { java HelloWorld }
+    → 2.100 sec
+
+    Measure-Command { java HelloWorld | Out-Null }
+    → 2.000 sec
+
+    So — yes — output handling is part of the total execution time unless discarded.
+ 
+  
+
+
+### ⚡apr16
+
+| Access Modifier | Same Class | Same Package | Subclass (Different Package) | Non-subclass (Different Package) |
+|:----------------|:------------|:--------------|:-------------------------------|:-----------------------------------|
+| `public`         | ✔️          | ✔️            | ✔️                             | ✔️                                 |
+| `private`        | ✔️          | ❌            | ❌                             | ❌                                 |
+| `protected`      | ✔️          | ✔️            | ✔️ (inheritance)               | ❌                                 |
+| *default*        | ✔️          | ✔️            | ❌                             | ❌                                 |
