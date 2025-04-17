@@ -182,3 +182,12 @@
 | `private`        | ✔️          | ❌            | ❌                             | ❌                                 |
 | `protected`      | ✔️          | ✔️            | ✔️ (inheritance)               | ❌                                 |
 | *default*        | ✔️          | ✔️            | ❌                             | ❌                                 |
+
+
+### ⚡17apr
+
+- gradients in photoShop 
+    - `ctlr+j` copy
+    - using filter , apply gaussian blur
+    - using filter add noise 
+    - `Ctrl+shift+A` camera raw
