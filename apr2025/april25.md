@@ -191,3 +191,14 @@
     - using filter , apply gaussian blur
     - using filter add noise 
     - `Ctrl+shift+A` camera raw
+    - inpower point use gradient trancparency .
+    
+
+### ⚡18apr
+
+- "Java" is not equal to "java" or "Java "    
+ (extra spaces and capitalization matter because Java strings are case-sensitive).  
+- can write int straight away `System.out.println(75);`
+- "s", "9", "text" are examples of strings (represented by double quotes)  
+- 's', '9', '+' are examples of characters (represented by single quotes) 
+- A variable acts as a container for storing data that you can use and modify throughout your program.
