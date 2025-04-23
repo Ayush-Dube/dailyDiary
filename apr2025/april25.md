@@ -202,3 +202,20 @@
 - "s", "9", "text" are examples of strings (represented by double quotes)  
 - 's', '9', '+' are examples of characters (represented by single quotes) 
 - A variable acts as a container for storing data that you can use and modify throughout your program.
+
+### ⚡21apr
+- while setting up virtual environments ,ran into these issues
+- `Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned`
+
+
+
+### ⚡23apr
+
+- bash is simailar to a programming language?
+- like linux cron job, in windows we have schedule task
+- write allthe commands in a bat or ps1 file ,give it required permission
+- execution policy for virtual environment
+- `echo %DATE:~0,2%`
+- `pip list | findstr "tk`
+-  `pip show Flask`
+- `conda list Flask`
