@@ -219,3 +219,161 @@
 - `pip list | findstr "tk`
 -  `pip show Flask`
 - `conda list Flask`
+
+
+### ⚡24apr
+- windows task scheduler to automate git commit and git push commands
+         
+      📝
+      - .ps1 file contains the script , whereas bat file executes that script file .   
+
+      - fileRecipe.ps1  ,contains    
+
+        $time= Get-Date -Format "yyyyMMdd_HHmmss"
+        $t2 = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+
+        $filepath= "X:\myCmdd\impText_$time.txt"
+
+        "I was created at: $t2" |Out-File -FilePath $filepath   
+
+      - runThis.bat  
+
+        powershell.exe -ExecutionPolicy Bypass -File "X:m\myCmdd\fileRecipe.ps1"
+
+---
+
+<details>
+    <summary>All details... on this topic Click here</summary>
+     
+    ---
+        ✅ Option 1: Run from PowerShell manually
+        Open PowerShell (Win + S → search "PowerShell" → Run as Administrator)
+
+        Type this and hit Enter:
+
+        powershell
+        Copy
+        Edit
+        powershell.exe -ExecutionPolicy Bypass -File "E:\mycmmd\createFile.ps1"
+        ✅ Option 2: Run via .bat file (double-click method)
+        Make a run.bat file with this line:
+
+        bat
+        Copy
+        Edit
+        powershell.exe -ExecutionPolicy Bypass -File "E:\mycmmd\createFile.ps1"
+        Then just double-click the run.bat file.
+    ---
+        ✅ Step 1: Create PowerShell script
+        Open Notepad
+
+        Paste this inside:
+
+        powershell
+        
+        $time = Get-Date -Format "yyyyMMdd_HHmmss"
+        $filepath = "E:\mycmmd\impText$time.txt"
+        "i was created at $time" | Out-File -FilePath $filepath
+        Save it as:
+
+        makefile
+        
+        E:\mycmmd\createFile.ps1
+        ✅ Script ready.
+
+        ✅ Step 2: Create .bat file to run this script
+        Open Notepad
+
+        Paste this inside:
+
+        bat
+        
+        powershell.exe -ExecutionPolicy Bypass -File "E:\mycmmd\createFile.ps1"
+        pause
+        Save it as:
+
+        makefile
+        
+        E:\mycmmd\runScript.bat
+        Make sure to select "Save as type: All Files", not .txt.
+
+        ✅ Double-click setup ready.
+
+        ✅ Step 3: Run and Test
+        Now just double-click runScript.bat
+
+        Ek CMD window khulega, aur file create hogi like:
+
+        
+        impText20250424_1945.txt
+        File ke andar:
+
+       
+        i was created at 20250424_1945
+
+    ---
+        🔍 Why this extra process is needed?
+        By default:
+
+        Windows doesn’t run .ps1 scripts on double-click
+
+        It opens them in Notepad, or does nothing, because of security reasons
+
+        That’s why we use .bat as a launcher
+    ---
+
+    
+</details>    
+
+---
+
+
+- Use Task Scheduler --> create task-->highest privlege-->trigger time
+
+- cmd   
+
+        🔧 Steps for CMD Automation:
+        Open Command Prompt (CMD) as Administrator (right-click and "Run as Administrator")
+
+        Run this command to create a task that runs your PowerShell script every 5 minutes:
+
+        
+        SCHTASKS /CREATE /SC MINUTE /MO 5 /TN "CreateFileTask" /TR "powershell.exe -ExecutionPolicy Bypass -File E:\mycmmd\createFile.ps1" /F   
+
+        /SC MINUTE: Task runs every minute.
+
+        /MO 5: Every 5 minutes.
+
+        /TN "CreateFileTask": Task name.
+
+        /TR: Specifies the program/command to run.
+
+        /F: Forces the task to be created (overwrites if exists).
+
+-  To disable this automation  
+ ![Alt text](./task.png)
+
+- Windows Task Scheduler minimum frequency is 1 minute — it doesn’t support every 30 seconds natively.
+
+
+---
+
+ 
+ ![Alt text](./image1.png)
+ ![Alt text](./image.png)
+
+ ---
+
+- ✅ To directly run a .ps1 file (without .bat), you need to do this:
+Option 1: Run from PowerShell manually    
+ - powershell.exe -ExecutionPolicy Bypass -File "E:\mycmmd\createFile.ps1"
+
+- ✅ Safer & Better Option: .bat wrapper (just like you did)  
+
+    The .bat file acts like a secure button:
+
+    You control what it runs
+
+    You can double-click it safely
+
+    You can log, add pause, etc.
