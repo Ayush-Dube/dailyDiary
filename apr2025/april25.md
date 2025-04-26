@@ -377,3 +377,23 @@ Option 1: Run from PowerShell manually
     You can double-click it safely
 
     You can log, add pause, etc.
+
+
+
+### ⚡apr26  
+- in java     
+
+      - int x,y,z =10,20,30;
+
+      - int x,y,z;
+        x=y=z=50;
+
+- all java variables must have a unique name
+- boolena isJavaFun = true -->correct         
+  boolean isJavaFiun = 'true' -->incorrect
+
+- double myDbl = 9.78d;  
+  int myInt = (int) myDbl;  
+  -->9
+
+- 
