@@ -396,4 +396,14 @@ Option 1: Run from PowerShell manually
   int myInt = (int) myDbl;  
   -->9
 
-- 
+### ⚡apr27  
+1. import Scanner class  
+2. make a object of this Scanner class as scn or any name   
+3. use input methods to take input from users and store them in variables    
+    - nextInt();
+    - nextDouble();
+    - nextFloat();
+    - next();
+    - nextLine();
+    - hasNextInt();
+4. scn.close()
