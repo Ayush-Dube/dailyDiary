@@ -407,3 +407,29 @@ Option 1: Run from PowerShell manually
     - nextLine();
     - hasNextInt();
 4. scn.close()
+
+
+### ⚡apr28
+
+  -   Abstract in java
+        
+    public abstract class TopAbstract {
+        /*
+        1. abstract keyword is mandatory for  declaring a abstract class.
+        2. abstract class must have at least one abstract method.
+        3. abstract class can have non-abstract(simple methods).
+        4. abstract class can have Constructor.
+        5. abstract class can not be Instan-tia-ted directly-->
+                - it must first get inherited in a class i.e (ImplimentedClass)and then implemented(write logic/code) and then through this ImplimentedClass
+                its object can be created.
+        */
+
+        public void simple() {
+            System.out.println("I'm a simple method inside a Abstract class");
+        }
+        
+        public abstract void absFunction1();//in reality because of a abstract method a class becomes a abstract class.
+        
+        public abstract void absFunction2();
+        
+    }
