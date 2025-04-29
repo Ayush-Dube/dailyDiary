@@ -433,3 +433,24 @@ Option 1: Run from PowerShell manually
         public abstract void absFunction2();
         
     }
+
+
+
+### ⚡apr29
+- interface    
+   
+      👉for multiple inheritance in Java
+
+      class A{}
+      class B{}
+      class C extends A,B{} ❌❌INVALID IN JAVA 
+
+      therfore use Interface 
+
+      interface A{}
+      interface B{}
+      class C implements A,B{
+        write code for methods of class A & B
+      }
+
+      
