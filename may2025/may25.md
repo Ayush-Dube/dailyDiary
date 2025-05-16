@@ -178,3 +178,10 @@ Every independent input needs separate error handling.
 ✅ Don’t rely on global handler for keeping program alive
 ✅ Avoid mixing different scanner input types unless you manage buffer carefully
 
+### ⚡may16
+
+#### sqlJoins
+- inner 
+- left 
+- right
+- self
