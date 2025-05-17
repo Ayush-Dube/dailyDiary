@@ -185,3 +185,10 @@ Every independent input needs separate error handling.
 - left 
 - right
 - self
+
+      //syntax for joins
+      SELECT table1.col1,table1.col2,table2.colx,table2.coly
+      FROM table1 ____JOIN table2
+      ON table1.col2 = table2.colx
+
+      
