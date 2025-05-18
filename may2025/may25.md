@@ -186,9 +186,12 @@ Every independent input needs separate error handling.
 - right
 - self
 
-      //syntax for joins
-      SELECT table1.col1,table1.col2,table2.colx,table2.coly
-      FROM table1 ____JOIN table2
-      ON table1.col2 = table2.colx
+            --Select specific columns from both tables
+            SELECT a.col1, a.col2, b.colx, b.coly
+            FROM table1 a
+            -- Use INNER, LEFT, RIGHT, or FULL as needed
+            <JOIN_TYPE> JOIN table2 b
+            -- Join condition: matching column from both tables
+            ON a.col2 = b.colx;
 
       
