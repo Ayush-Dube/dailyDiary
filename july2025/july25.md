@@ -36,9 +36,10 @@
 To use a link in your presentation use `[]()` syntax   
 - [a link](https://www.google.com)
 
-- images `![alternate text](link)`  
 
-### Alerts   
+
+### Alerts     
+supported in some markDown preview.But surely will come up on Github preview.
 
 > [!NOTE]  
 > Now here ,write ur remarks.
@@ -59,7 +60,21 @@ public class Demo{
 ```python
 print("Hello Python")
 ```
-### highlight
-here in this sentense we can ==really highlight== a word.
+### Highlighter
+here in this sentense we can ==really highlight== a word.  (not suppoeted in all)
+here in this sentense we can <mark> really highlight</mark> a word.
+
+### Images
+- `![Alt text](image-url)`  
+
+Since Markdown doesn’t support resizing images, inline HTML can be used here to accomplish this task.  
+- `<img src="image-url" alt="Alt text" width="<width>" height="<height>">`    
+--- 
+![alt text](tiger.png)
+--- 
+  inCenter using html,controlling size
+<center>  <img src="tiger.png" alt="aTiger" width="100" style="border: 2px solid yellow;">
+</center>
 
 
+- Dom manupulation using javaScript is not possible.
