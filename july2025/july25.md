@@ -73,8 +73,18 @@ Since Markdown doesn’t support resizing images, inline HTML can be used here t
 ![alt text](tiger.png)
 --- 
   inCenter using html,controlling size
-<center>  <img src="tiger.png" alt="aTiger" width="100" style="border: 2px solid yellow;">
-</center>
+<!-- <center>  
+<img src="tiger.png" alt="aTiger" width="100" style="border: 2px solid yellow;">
+</center>    this syntax is outdated. -->
+<div align="center">
+<img src="tiger.png" alt="aTiger" width="100" style="border: 2px solid yellow;">
+</div>
+
 
 
 - Dom manupulation using javaScript is not possible.
+- Dom manupulation using javaScript is not possible.
+- Dom manupulation using javaScript is not possible.
+- Dom manupulation using javaScript is not possible.
+- Dom manupulation using javaScript is not possible.
+
