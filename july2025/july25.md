@@ -6,7 +6,7 @@
 
 # a level-One Heading
 ## a level-Two Heading
-### a level-Three heading
+### a level-Three heading (no line seprator)
 #### important Bullet Points
 
 - one
@@ -32,13 +32,13 @@
 - **This is _very_ important**
 - ***Very vital therefore bold and italic***
 
-### Link
+## Link
 To use a link in your presentation use `[]()` syntax   
 - [a link](https://www.google.com)
 
 
 
-### Alerts     
+## Alerts     
 supported in some markDown preview.But surely will come up on Github preview.
 
 > [!NOTE]  
@@ -47,7 +47,7 @@ supported in some markDown preview.But surely will come up on Github preview.
 > [!CAUTION]  
 > Now here ,write ur remarks.
 
-### codeBlockk
+## codeBlockk
 - either , triple backtiks` ``` ``` ` or four times`[space][space][space][space]`
 
 ```java
@@ -60,11 +60,11 @@ public class Demo{
 ```python
 print("Hello Python")
 ```
-### Highlighter
+## Highlighter
 here in this sentense we can ==really highlight== a word.  (not suppoeted in all)
 here in this sentense we can <mark> really highlight</mark> a word.
 
-### Images
+## Images
 - `![Alt text](image-url)`  
 
 Since Markdown doesn’t support resizing images, inline HTML can be used here to accomplish this task.  
@@ -80,11 +80,10 @@ Since Markdown doesn’t support resizing images, inline HTML can be used here t
 <img src="tiger.png" alt="aTiger" width="100" style="border: 2px solid yellow;">
 </div>
 
+>[!IMPORTANT]  
+>vsCode supports html style formatting . Therefore,u can see border style and color in vsCode but not on github.   
 
 
-- Dom manupulation using javaScript is not possible.
-- Dom manupulation using javaScript is not possible.
-- Dom manupulation using javaScript is not possible.
-- Dom manupulation using javaScript is not possible.
-- Dom manupulation using javaScript is not possible.
+
+
 
