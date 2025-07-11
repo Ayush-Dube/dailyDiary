@@ -90,11 +90,61 @@ Since Markdown doesn’t support resizing images, inline HTML can be used here t
 </div>
 
 >[!IMPORTANT]  
->vsCode supports html style formatting . Therefore,u can see border style and color in vsCode but not on github.   
+>vsCode supports html style formatting . Therefore,u can see border style and color in vsCode but not on github.     
 >In order to see these alerts properly on vsCode u need extentions such as enhanced markdown or all in one md.
 
 
+## Detailed Click
 
+In md if u a very huge section which u would like to hide in between we can use details ans summary tag   
+
+```md
+<details>
+<summary>Click to see more</summary>
+your content
+</details>
+```
+<br>
+<details>
+<summary>Click to See</summary>
+
+#### Four-hash 
+###  Three-hash
+## Two-hash
+# One-hash
+
+## List
+- Aircraft
+  - Fighter Jet
+     - rafael 
+     - su-30
+     - mig-29
+  - Transport
+     - c-17 GlobeMaster
+     - c-130j Super Hercules
+     - p-8 Posiden
+
+  - Helicopter  
+    - apache
+    - Dhruv
+    - prachand
+    - mi-17
+
+## Image
+
+<div align="center">
+<img src="jets101.jpg" alt="jetsFling" width="150">
+</div>
+
+## CodeBlockk
+```js
+console.log("Hello webJs");
+```  
+
+
+
+
+</details>
 
 
 
