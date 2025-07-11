@@ -39,12 +39,21 @@ To use a link in your presentation use `[]()` syntax
 
 
 ## Alerts     
-supported in some markDown preview.But surely will come up on Github preview.
+**Supported in some markDown preview.But surely will come up on Github preview.**
 
 > [!NOTE]  
 > Now here ,write ur remarks.
 
 > [!CAUTION]  
+> Now here ,write ur remarks.
+
+> [!Tip]  
+> Now here ,write ur remarks.
+
+> [!Warning]  
+> Now here ,write ur remarks.
+
+> [!IMPORTANT]  
 > Now here ,write ur remarks.
 
 ## codeBlockk
@@ -82,6 +91,8 @@ Since Markdown doesn’t support resizing images, inline HTML can be used here t
 
 >[!IMPORTANT]  
 >vsCode supports html style formatting . Therefore,u can see border style and color in vsCode but not on github.   
+>In order to see these alerts properly on vsCode u need extentions such as enhanced markdown or all in one md.
+
 
 
 
