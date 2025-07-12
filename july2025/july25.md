@@ -2,7 +2,7 @@
 
 - in java `i++` vs `++i`
 
-### ⚡july11
+###⚡july11
 
 # a level-One Heading
 ## a level-Two Heading
@@ -71,7 +71,9 @@ print("Hello Python")
 ```
 ## Highlighter
 here in this sentense we can ==really highlight== a word.  (not suppoeted in all)
-here in this sentense we can <mark> really highlight</mark> a word.
+here in this sentense we can <mark> really highlight</mark> a word.  
+or 
+use single backtick `like this`
 
 ## Images
 - `![Alt text](image-url)`  
@@ -106,7 +108,7 @@ your content
 ```
 <br>
 <details>
-<summary>Click to See</summary>
+<summary>Click to See a summary</summary>
 
 #### Four-hash 
 ###  Three-hash
@@ -145,6 +147,76 @@ console.log("Hello webJs");
 
 
 </details>
+
+
+### ⚡july12 
+- interesting Java
+<details>
+✅ Java Object References: Declare vs. Initialize    
+
+1️⃣ Declaration only:
+
+>Test obj1;    //You’ve only declared obj1.
+
+- No memory is allocated for an object — just a slot for a reference in the stack.  
+
+⚠️ Compiler Error: You must assign it before you use it.
+
+
+>System.out.println(obj1); // ❌ compile-time error: might not have been initialized  
+
+2️⃣ Declaration + Initialized to null:
+
+```
+Test obj1 = null;  
+
+- Now obj1 is initialized — it points to null, which means “no object.”
+
+- This uses a small amount of stack memory for the reference.  
+
+- No object is created in the heap yet.
+
+✅ System.out.println(obj1); works → prints null.
+```
+
+3️⃣ Later you can create the real object:
+
+
+`obj1 = new Test();`  
+Now obj1 points to a real Test object in the heap.   
+ 
+You can safely call obj1’s non-static methods and access non-static fields.   
+
+This works the same for both cases:  
+
+```
+Test obj1;       // must assign before use
+obj1 = new Test();
+
+Test obj2 = null; 
+obj2 = new Test(); // reassigns from null to object
+```
+
+✅ Key Points
+Local variables must be initialized before use.  
+
+null means “this reference does not point to any real object.”  
+
+Declaring Test obj = null; is common when you plan to create the object later, conditionally.  
+
+Accessing static members via a null reference works, but accessing non-static members on null throws NullPointerException.
+
+Example: 
+```
+Test obj = null;
+System.out.println(obj.name1); // ✅ works (static)
+System.out.println(obj.name);  // ❌ NullPointerException (non-static)
+```
+
+</details>
+
+
+
 
 
 
