@@ -217,6 +217,8 @@ System.out.println(obj.name);  // ❌ NullPointerException (non-static)
 
 </details>
 
+### ⚡july16
+
 ## More on Default Values 
 
 -  “Default Initialization of Instance Variables” ya simply “Default Values”
@@ -276,7 +278,15 @@ System.out.println(name1); // ❌ Compile-time error: variable might not have be
 ![alt text](image-4.png)
 </details>
 
+---
 
+## ⚡july17
+- methodChaining/builderPattern 
+- why builderPattern 
+- case  of Construcutor
+  - bydefault every class will be provided a construcutor by java Class().
+  - for if u make Constructor of your own, then default construcutor will not work 
+  - u can have mixture of both.(u can write objects both ways 1.byconstrucutor parameters 2. by builderpattern methods)
 
 
 
