@@ -6,10 +6,10 @@
 ### ⚡july11
 
 
-# a level-One Heading
-## a level-Two Heading
-### a level-Three heading (no line seprator)
-#### important Bullet Points
+# 🎯a level-One Heading
+## 🎯a level-Two Heading
+### 🎯a level-Three heading (no line seprator)
+#### 🎯important Bullet Points
 
 - one
 - two
@@ -150,6 +150,17 @@ console.log("Hello webJs");
 
 </details>
 
+### usefull emoji
+```
+🔥🎯♥️♦️🧿🔻💥✅⚡👉👇🐦‍🔥⏩⏬❌⛓️‍💥👆🚩🤖👁️✨
+🕹️🪄🗝️🛠️🪛🪓⚙️⛓️‍💥⛓️🔗🛡️⚔️🧣🧱🧬🔎📍📌🚀⚓🪐
+❄️💢💫♾️🚫❌⭕❗💡💵💰💸⏰❓‼️⁉️💯☢️⚠️☣️✳️
+⬇️↔️↕️🔄️🔝💲🟰➗✖️➖➕🔴🟡🟢🔵⚫⚪🟥🟩🟨🔶
+🔸🔷💭🔻🔺🔹
+🆗🆕0️⃣1️⃣2️⃣3️⃣4️⃣5️⃣6️⃣7️⃣8️⃣9️⃣🔟▶️🔁◀️🔼🔽➡️⬅️⬆️
+
+```
+<!-- java content below -->
 
 ### ⚡july12 
 - interesting Java
@@ -288,6 +299,23 @@ System.out.println(name1); // ❌ Compile-time error: variable might not have be
   - for if u make Constructor of your own, then default construcutor will not work 
   - u can have mixture of both.(u can write objects both ways 1.byconstrucutor parameters 2. by builderpattern methods)
 
+## ⚡july28
 
+### 1.
+![alt text](image-5.png)  
+
+### 2. 
+![alt text](image-6.png)
+
+### 3. 
+```java
+public class TestVariables {
+    public static void main(String[] args) {
+        int a, b, c = 5;
+        // System.out.println(a); // ❌ Error
+        System.out.println(c); // ✅
+    }
+}
+```
 
 
