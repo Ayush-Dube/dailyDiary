@@ -80,3 +80,41 @@ Mac JVM (or any other OS with JVM)
 ### ⚡aug5
 - `https://chatgpt.com/share/6892123f-240c-800d-910e-69baeff6f9ca`
 
+### ⚡aug6
+
+#### java Circle class...
+
+<pre>
+┌─────────────────────── Method Area ───────────────────────┐
+│ Class: Circle                                             │
+│ ├─ static float pi = 3.14f                                │
+│ ├─ static int[] myArr2 → Heap @0x6002                     │
+│ ├─ static method staticInfo4()                            │
+│ └─ Instance methods: perimeter1(), surfaceArea2(),        │
+│    volume3()                                              │
+└───────────────────────────────────────────────────────────┘
+
+┌──────────────────────────── Stack ─────────────────────────────┐
+│ main()                                                         │
+│ ├─ c1 → Heap @0x5001                                           │
+│ ├─ c2 → Heap @0x5002                                           │
+│ └─ (method calls → perimeter1(), volume3(), surfaceArea2(),   │
+│     staticInfo4() executed with their own local variables)     │
+└────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────── Heap ──────────────────────────────┐
+│ Object @0x5001 (Circle)                                        │
+│ ├─ radius = 1                                                  │
+│ └─ myArr1 → Heap @0x7001 (int[])                               │
+│     └─ [1, 3, 7]                                               │
+│                                                               │
+│ Object @0x5002 (Circle)                                        │
+│ ├─ radius = 3                                                  │
+│ └─ myArr1 → Heap @0x7002 (int[])                               │
+│     └─ [1, 3, 7]                                               │
+│                                                               │
+│ Array @0x6002 (static myArr2):                                 │
+│ └─ [1, 2, 5, 11]                                               │
+└────────────────────────────────────────────────────────────────┘
+</pre>
+
