@@ -84,37 +84,71 @@ Mac JVM (or any other OS with JVM)
 
 #### java Circle class...
 
-<pre>
-┌─────────────────────── Method Area ───────────────────────┐
-│ Class: Circle                                             │
-│ ├─ static float pi = 3.14f                                │
-│ ├─ static int[] myArr2 → Heap @0x6002                     │
-│ ├─ static method staticInfo4()                            │
-│ └─ Instance methods: perimeter1(), surfaceArea2(),        │
-│    volume3()                                              │
-└───────────────────────────────────────────────────────────┘
+```java
 
-┌──────────────────────────── Stack ─────────────────────────────┐
-│ main()                                                         │
-│ ├─ c1 → Heap @0x5001                                           │
-│ ├─ c2 → Heap @0x5002                                           │
-│ └─ (method calls → perimeter1(), volume3(), surfaceArea2(),   │
-│     staticInfo4() executed with their own local variables)     │
-└────────────────────────────────────────────────────────────────┘
++--------------------------+
+|      METHOD AREA         |  <-- Class-level memory (shared)
++--------------------------+
+| Circle class loaded       |
+| static float pi = 3.14    |
+| static int[] myArr2       |
+|   → reference → @0xA123   |  <-- (points to heap array)
+| static method staticInfo4() |
++--------------------------+
 
-┌──────────────────────────── Heap ──────────────────────────────┐
-│ Object @0x5001 (Circle)                                        │
-│ ├─ radius = 1                                                  │
-│ └─ myArr1 → Heap @0x7001 (int[])                               │
-│     └─ [1, 3, 7]                                               │
-│                                                               │
-│ Object @0x5002 (Circle)                                        │
-│ ├─ radius = 3                                                  │
-│ └─ myArr1 → Heap @0x7002 (int[])                               │
-│     └─ [1, 3, 7]                                               │
-│                                                               │
-│ Array @0x6002 (static myArr2):                                 │
-│ └─ [1, 2, 5, 11]                                               │
-└────────────────────────────────────────────────────────────────┘
-</pre>
+
++--------------------------+
+|           HEAP           |  <-- Object-level memory
++--------------------------+
+| Array @0xA123             |  <-- static myArr2 actual data
+|   [1, 2, 5, 11]           |
++--------------------------+
+| c1 → Circle object @0xB101|
+|   radius = 1              |
+|   color = null            |
+|   myArr1 → @0xC001        |
++--------------------------+
+| Array @0xC001             |  <-- non-static array of c1
+|   [1, 3, 7]               |
++--------------------------+
+| c2 → Circle object @0xB102|
+|   radius = 3              |
+|   color = null            |
+|   myArr1 → @0xC002        |
++--------------------------+
+| Array @0xC002             |  <-- non-static array of c2
+|   [1, 3, 7]               |
++--------------------------+
+
+
++--------------------------+
+|          STACK           |  <-- Method-local memory (per thread)
++--------------------------+
+| main()                   |
+|   Circle c1 → @0xB101     |
+|   Circle c2 → @0xB102     |
++--------------------------+
+| c1.perimeter1()          |
+|   float res              |
++--------------------------+
+| c1.surfaceArea2()        |
+|   float res              |
++--------------------------+
+| c1.volume3()             |
+|   float res              |
++--------------------------+
+| c2.perimeter1()          |
+|   float res              |
++--------------------------+
+| c2.surfaceArea2()        |
+|   float res              |
++--------------------------+
+| c2.volume3()             |
+|   float res              |
++--------------------------+
+| staticInfo4()            |
+|   int x = 360            |  <-- local variable of static method
++--------------------------+
+
+```
 
