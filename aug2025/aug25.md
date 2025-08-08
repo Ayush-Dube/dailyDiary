@@ -82,6 +82,8 @@ Mac JVM (or any other OS with JVM)
 
 ### ⚡aug6
 
+<details>
+
 #### java Circle class...
 
 ```java
@@ -151,4 +153,8 @@ Mac JVM (or any other OS with JVM)
 +--------------------------+
 
 ```
+</details>
 
+### ⚡aug7
+
+>`Starting is the perfect condition.`
