@@ -158,3 +158,6 @@ Mac JVM (or any other OS with JVM)
 ### ⚡aug7
 
 >`Starting is the perfect condition.`
+
+### ⚡aug11  
+>Learinh generics
