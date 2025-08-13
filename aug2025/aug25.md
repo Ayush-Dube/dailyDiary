@@ -160,4 +160,30 @@ Mac JVM (or any other OS with JVM)
 >`Starting is the perfect condition.`
 
 ### ⚡aug11  
->Learinh generics
+- Learing generics
+
+### ⚡aug12
+-shifting as well as studying...
+
+### ⚡aug13
+- Arrays in java
+<details>
+
+```java
+int[] numbers = {1, 2, 3, 4, 5};  
+
+//This line creates an array of integers named numbers and initializes it with the values 1, 2, 3, 4, and 5. The square brackets [] tell Java that numbers is an array.
+
+public class ArrayDemo {
+    public static void main(String[] args) {
+        int[] numbers = {1,2,3,4,5};
+        int index=0;
+        for(int i:numbers){
+            System.out.println("Element at index "+index+" is "+i);
+            index++;
+        }
+    }
+}
+
+```
+</details>
