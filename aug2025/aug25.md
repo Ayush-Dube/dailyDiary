@@ -187,3 +187,32 @@ public class ArrayDemo {
 
 ```
 </details>
+
+### ⚡aug14
+
+<details>
+
+### SDLC
+>SDLC is the structured process followed to design, develop, test, and deliver high-quality software within time and budget.
+
+It helps teams work in steps so that:
+
+- Requirements are clear
+
+- Bugs are caught early
+
+- Project stays on track
+
+
+| Step                        | Purpose                                                   | Key Output                                 |
+| --------------------------- | --------------------------------------------------------- | ------------------------------------------ |
+| 1. **Requirement Analysis** | Understand *what* the client wants                        | SRS (Software Requirement Specification)   |
+| 2. **Planning**             | Decide *how* to do it, cost, timeline                     | Project Plan                               |
+| 3. **Design**               | Create blueprint of software (UI, database, architecture) | HLD & LLD (High-Level & Low-Level Designs) |
+| 4. **Development**          | Write the actual code                                     | Source Code                                |
+| 5. **Testing**              | Find and fix bugs                                         | Test Report                                |
+| 6. **Deployment**           | Release software to production                            | Live System                                |
+| 7. **Maintenance**          | Keep software running, update, fix                        | Patches, Updates                           |
+
+
+</details>
