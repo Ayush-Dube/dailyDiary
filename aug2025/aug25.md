@@ -216,3 +216,19 @@ It helps teams work in steps so that:
 
 
 </details>
+
+### ⚡aug15
+
+<details>
+
+| Model                                      | Kaise Kaam Karta Hai                                               | Best For                                       | Cons                               |
+| ------------------------------------------ | ------------------------------------------------------------------ | ---------------------------------------------- | ---------------------------------- |
+| **1. Waterfall**                           | Steps strictly **one after another** (no going back)               | Simple, small projects with fixed requirements | No flexibility; changes are costly |
+| **2. V-Model (Validation & Verification)** | Waterfall ka hi version, but har dev step ke saath testing planned | Projects needing strong QA                     | Still rigid                        |
+| **3. Incremental Model**                   | Software deliver in **small working parts**                        | Medium projects, partial delivery possible     | Needs good planning                |
+| **4. Iterative Model**                     | Build a basic version → improve in **repeated cycles**             | When requirements are not fully known          | Risk of rework                     |
+| **5. Spiral Model**                        | Focus on **risk analysis** + repeated cycles                       | Large, high-risk projects                      | Expensive, complex                 |
+| **6. Agile**                               | Break into **small sprints** (1–4 weeks), continuous feedback      | Projects with changing requirements            | Needs close client involvement     |
+| **7. Big Bang**                            | No formal plan, start coding immediately                           | Very small, experimental projects              | High risk of failure               |
+
+</details>
