@@ -232,3 +232,11 @@ It helps teams work in steps so that:
 | **7. Big Bang**                            | No formal plan, start coding immediately                           | Very small, experimental projects              | High risk of failure               |
 
 </details>
+
+
+### ⚡aug18
+
+<details>
+array vs arrayList
+
+</details>
