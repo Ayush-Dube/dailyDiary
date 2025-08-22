@@ -240,3 +240,86 @@ It helps teams work in steps so that:
 array vs arrayList
 
 </details>
+
+### ⚡aug22
+<details>
+
+```java
+public class Circle {   
+    
+    int radius;
+    String color;
+    
+    static float pi = 3.142f;
+
+    
+    Circle(int radius) {
+        this.radius = radius;
+    }
+    Circle(int radius,String color){
+        this.radius = radius;
+        this.color = color;
+      }
+
+    
+
+    void perimeter1() {
+        float res = 2 * this.radius * Circle.pi;
+
+        System.out.printf("Circumference for the given radius is :- %.2f %n", res);
+    }
+
+    void surfaceArea2() {
+        float res = 4 * pi * radius * this.radius;
+        System.out.printf("Total surface Area for the given radius is :- %.2f %n", res);
+    }
+
+    void volume3() {
+        float res = pi * radius * radius * radius * 4 / 3;
+        System.out.printf("Volume for the given radius is :- %.2f%n", res);
+    }
+   
+    static void staticInfo4() {
+        int x = 360;
+        System.out.printf("A cicrcle has %d degree's in it. %n", x);
+    }
+
+    int[] myArr1 = { 1, 3, 7 };
+    static int[] myArr2 = { 1, 2, 5, 11 };
+    
+     
+    //👇 see how I am making a static object of the class itself
+    static Circle c3 = new Circle(9,"blue");
+
+
+   public static void main(String[] args) {
+      
+      
+        Circle.staticInfo4();
+        System.out.println(Circle.pi);
+
+        Circle c1 = new Circle(1);
+        
+        System.out.println(c1);
+        c1.perimeter1();
+        c1.volume3();
+        c1.surfaceArea2();
+        
+        Circle c2 = new Circle(3);
+        
+        c2.volume3();
+        c2.perimeter1();
+        c2.surfaceArea2();
+       
+        c3.perimeter1();
+        System.out.println(c1.myArr1[1]);
+
+        System.out.println(Circle.myArr2[2]);
+
+      
+      
+   }
+}
+```
+</details>
+
