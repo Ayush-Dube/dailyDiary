@@ -323,5 +323,166 @@ public class Circle {
 ```
 </details>
 
-⚡aug23
+### ⚡aug23
 ![alt text](image.png)
+
+- ⁉️agr main method khali ho pr class mei bhaut sari errors , tb bhi code error nahi deta ??
+
+- FFmpeg
+
+### ⚡aug24
+
+⚡ Java Rule:
+
+Method overloading tab hoti hai jab parameter list different ho (type ya number me).
+
+Yaha dono ppr ka parameter exactly same hai:
+
+String... str → varargs internally treat hota hai as String[] str.
+
+Isliye compiler confuse hota hai → bolta hai "duplicate method".
+
+
+### ⚡aug26
+ 
+- For giving conditions,
+    - Concept of Exclusion and Inclusion.
+
+### ⚡aug31
+
+<details>
+
+Ayush-Dube: terminal se ye java code kyu nahi chal rha 
+
+VS Code: Aapka Java code terminal se run nahi ho raha ho sakta hai ki aapko sahi classpath ya package structure ka dhyan nahi diya gaya ho. Java me jab aap package ka use karte hain, toh aapko compile aur run karte waqt package path ka dhyan rakhna padta hai.
+
+Ypoly.java file ka package hai `polymorphism`. Isliye aapko ye steps follow karne honge:
+
+1. Terminal me us folder par jayein jahan `polymorphism` folder hai (yani `src2` ke andar).
+2. Compile karne ke liye:
+   
+```
+   javac polymorphism/Ypoly.java
+   ```
+3. Run karne ke liye:
+   
+```
+   java polymorphism.Ypoly
+   ```
+Agar aap kisi aur directory me hain toh classpath specify karna padega:
+```
+java -cp . polymorphism.Ypoly
+```
+
+Agar ab bhi problem aaye toh ensure karein ki aapka folder structure sahi hai aur file ka naam aur package declaration match karte hain.
+
+Aap terminal me directly run karne ke liye **Terminal: Create New Terminal** command ka use kar sakte hain.
+
+
+Show in Command Palette
+
+Ayush-Dube: jb meiny package polymorphism line comment kari tb ye code chal terminal mei but aab eclipse mei nahi chalyga kyu 
+
+GitHub Copilot: Jab aap `package polymorphism;` line ko comment kar dete hain, toh Java file kisi package ka hissa nahi rehti. Is wajah se:
+
+- **Terminal me:** Agar aap terminal me `src2/polymorphism` folder ke andar hain aur `javac Ypoly.java` run karte hain, toh bina package ke code compile/run ho jata hai.
+- **Eclipse me:** Eclipse project structure packages ke hisaab se hota hai. Agar aapki file `polymorphism` folder ke andar hai, toh usme `package polymorphism;` hona chahiye. Agar nahi hai, toh Eclipse error dega: "The declared package does not match the expected package".
+
+**Summary:**  
+- **Terminal:** File ka package declaration aur folder structure match hona chahiye, warna bina package ke file root folder me honi chahiye.
+- **Eclipse:** File ka package declaration aur uska folder structure match hona zaroori hai.
+
+**Sahi tarika:**  
+Agar file Ypoly.java me hai, toh `package polymorphism;` likhna chahiye.  
+Agar bina package ke likhna hai, toh file ko `src2` ya kisi root folder me rakhein.
+
+**Eclipse me chalane ke liye:**  
+- `package polymorphism;` line uncomment karein.
+- File ko `polymorphism` folder ke andar hi rakhein.
+
+Aapko folder structure aur package declaration ko hamesha sync rakhna chahiye.
+
+Ayush-Dube: [Running] cd "d:\JAVA101\javaAgain\beginner\june\src2\polymorphism\" && javac Ypoly.java && java Ypoly
+Error: Could not find or load main class Ypoly
+Caused by: java.lang.NoClassDefFoundError: Ypoly (wrong name: polymorphism/Ypoly)
+
+[Done] exited with code=1 in 0.584 seconds
+
+y?
+
+GitHub Copilot: Aapko ye error isliye mil rahi hai kyunki aapki class `Ypoly` package `polymorphism` ke andar hai, lekin aap `java Ypoly` likh kar run kar rahe hain. Java ko fully qualified class name chahiye hota hai jab package use hota hai.
+
+**Sahi tarika:**
+
+Terminal me `src2` folder ke andar jaakar ye command run karein:
+
+```
+java polymorphism.Ypoly
+```
+
+Aapka command kuch aisa hona chahiye:
+```
+cd d:\JAVA101\javaAgain\beginner\june\src2
+javac polymorphism\Ypoly.java
+java polymorphism.Ypoly
+```
+
+**Note:**  
+- Jab bhi package use karte hain, run karte waqt package ka naam zaroor dena hota hai.
+- Agar aap `java Ypoly` likhenge toh Java root package me `Ypoly` dhundhega, lekin aapki class `polymorphism` package me hai.
+
+**Summary:**  
+`java polymorphism.Ypoly` likhen, tabhi code chalega.
+
+---
+---
+Aapka code sahi hai, lekin aap Java class ko galat tarike se run kar rahe hain.  
+**Java me class run karte waqt:**
+- **Backslash (`\`) nahi, dot (`.`) ka use karein.**
+- **`.class` extension nahi lagana hai.**
+
+**Sahi command:**
+
+```sh
+java polymorphism.Ypoly
+```
+
+**Aapka folder structure:**
+```
+src2/
+  └── polymorphism/
+        └── Ypoly.java
+```
+
+**Steps:**
+
+1. Pehle compile karein:
+   ```
+   javac polymorphism\Ypoly.java
+   ```
+2. Fir run karein:
+   ```
+   java polymorphism.Ypoly
+   ```
+
+**Galat commands:**
+- `java polymorphism\Ypoly` ❌
+- `java polymorphism\Ypoly.class` ❌
+
+**Sahi command:**
+- `java polymorphism.Ypoly` ✅
+
+**Note:**  
+Aapko `src2` folder ke andar hi ye command chalani hai, jaise aap kar rahe hain.
+
+Agar ab bhi error aaye, to ensure karein ki `Ypoly.class` file `polymorphism` folder ke andar bani ho.  
+Aap `dir polymorphism` command se check kar sakte hain.
+
+
+
+</details>
+
+>You dont have to go inside the pacakge to run the java code,  
+ remain in the source folder and just add packageName.ClassName.java
+
+ ![alt text](image-1.png)
