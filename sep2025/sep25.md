@@ -104,3 +104,21 @@ Drawing circle cx101 with radius 5
 
 >Constructor hamesha subclass me hi hota hai, superclass me nahi.
 </details>
+
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+|||
+|:---:|:---:|
+|Compile|javac /folder/subfolder/packageName/UrCode.java|
+|Run|java -cp  "/folder/subfolder/" packageName.UrCode|
+
+### ⚡sep2
+
+- more on javac --> java
+>✅ Rule of thumb:    
+>- Code likhte waqt: Always use package xyz;
+>- Compile: javac full/path/to/File.java
+>- Run: java packageName.ClassName (starting from the root folder above package).
+
