@@ -122,3 +122,21 @@ Drawing circle cx101 with radius 5
 >- Compile: javac full/path/to/File.java
 >- Run: java packageName.ClassName (starting from the root folder above package).
 
+### ⚡sep3
+
+- access modifier 
+- singleton class
+- Yes, there is a naming convention for Java packages:  
+    - All lowercase letters are used (e.g., packone, com.example.project).
+    - Reverse domain name is often used for unique package names (e.g., com.companyname.project).
+    - No underscores or special characters; use only letters and numbers.
+    - Short, meaningful names that reflect the functionality or grouping.  
+
+Your package name packOne should ideally be packone to follow conventions.
+
+- encountered a huge problem in Eclipse ,
+  - shoould not name package with capital ltrs, only use lowercase and numbers
+  - delete the bin , clean the project 
+  - rename the packages properly .
+
+  >`Always remeber for class, only two modifiers -- default/no modifier and public`
