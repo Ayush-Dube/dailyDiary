@@ -139,4 +139,82 @@ Your package name packOne should ideally be packone to follow conventions.
   - delete the bin , clean the project 
   - rename the packages properly .
 
-  >`Always remeber for class, only two modifiers -- default/no modifier and public`
+  >`Always remeber for class, only two modifiers -- default/noModifier and public`
+
+
+  ### ⚡sep5
+
+  ![alt text](image-2.png)  
+ 
+
+  ```java
+    interface Device {
+        // Variables are always public, static, final
+        int MAX_VOLUME = 100;   // same as: public static final int MAX_VOLUME = 100;
+        int MIN_VOLUME = 0;
+
+        void powerOn();   // abstract method
+        void powerOff();
+    }
+
+    class TV implements Device {
+        private int volume = 50;
+
+        public void powerOn() {
+            System.out.println("TV is ON. Volume: " + volume);
+        }
+        public void powerOff() {
+            System.out.println("TV is OFF");
+        }
+
+        public void increaseVolume() {
+            if(volume < MAX_VOLUME) {
+                volume++;
+            }
+            System.out.println("Volume: " + volume);
+        }
+    }
+
+    public class Main {
+        public static void main(String[] args) {
+            System.out.println(Device.MAX_VOLUME); // ✅ access using interface name
+
+            TV sony = new TV();
+            sony.powerOn();
+            sony.increaseVolume();
+            sony.powerOff();
+        }
+    }
+
+  ```
+
+```java
+interface Outer {
+    void show();
+
+    // Nested interface
+    interface Inner {
+        void display();
+    }
+
+    // Nested class
+    class Helper {
+        public void help() {
+            System.out.println("Helping...");
+        }
+    }
+
+    // Nested enum
+    enum Status { ON, OFF }
+}
+
+class Demo implements Outer, Outer.Inner {
+    public void show() {
+        System.out.println("Outer show()");
+    }
+    public void display() {
+        System.out.println("Inner display()");
+    }
+}
+
+```
