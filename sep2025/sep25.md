@@ -142,79 +142,434 @@ Your package name packOne should ideally be packone to follow conventions.
   >`Always remeber for class, only two modifiers -- default/noModifier and public`
 
 
-  ### ⚡sep5
+  ### ⚡sep4
 
   ![alt text](image-2.png)  
  
 
-  ```java
-    interface Device {
-        // Variables are always public, static, final
-        int MAX_VOLUME = 100;   // same as: public static final int MAX_VOLUME = 100;
-        int MIN_VOLUME = 0;
 
-        void powerOn();   // abstract method
-        void powerOff();
-    }
 
-    class TV implements Device {
-        private int volume = 50;
 
-        public void powerOn() {
-            System.out.println("TV is ON. Volume: " + volume);
-        }
-        public void powerOff() {
-            System.out.println("TV is OFF");
-        }
+### ⚡sep5
 
-        public void increaseVolume() {
-            if(volume < MAX_VOLUME) {
-                volume++;
-            }
-            System.out.println("Volume: " + volume);
-        }
-    }
+- Happy Onam;
 
-    public class Main {
-        public static void main(String[] args) {
-            System.out.println(Device.MAX_VOLUME); // ✅ access using interface name
+### ⚡sep7
+<details>
+<summary>Return Type and Object Type</summary>
 
-            TV sony = new TV();
-            sony.powerOn();
-            sony.increaseVolume();
-            sony.powerOff();
-        }
-    }
+Yes, you are correct!
 
-  ```
+In Java, the statement:
 
-```java
-interface Outer {
-    void show();
+````java
+ReturnType instance = new ObjectType();
+````
 
-    // Nested interface
-    interface Inner {
-        void display();
-    }
+means that `ObjectType` must be the same as `ReturnType` or a subclass (or implementation, if `ReturnType` is an interface) of `ReturnType`.  
+- If `ObjectType` is **not** a subclass or does **not** implement `ReturnType`, you will get a compile-time error:  
+`incompatible types: ObjectType cannot be converted to ReturnType`
 
-    // Nested class
-    class Helper {
-        public void help() {
-            System.out.println("Helping...");
-        }
-    }
+This is the basis of **polymorphism** in Java.  
+- The reference type (`ReturnType`) decides what methods/fields are accessible.
+- The actual object type (`ObjectType`) decides which overridden methods run at runtime.
 
-    // Nested enum
-    enum Status { ON, OFF }
+**Example:**
+
+````java
+Animal a = new Dog(); // Dog extends Animal -- OK
+Animal a = new String(); // ❌ Error: String is not a subclass of Animal
+````
+
+So yes, your understanding is correct!
+</details>
+
+
+### ⚡sep8
+
+>Blender jarur seekhna hai;
+
+### ⚡sep9
+
+| **Type of Inner Class**    | **Access to Outer Instance (Non-static) Members**                                                                                       | **Access to Outer Static Members** | **Access to Outer Private Members**                                      | **Key Statements / Notes**                                                                                                                                                 |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Non-static Inner Class** | ✅ Yes (directly, because it has an implicit reference to the **enclosing class** instance)                                              | ✅ Yes                              | ✅ Yes                                                                    | - Always tied to an instance of the enclosing class.<br>- Can use both static and non-static members of the enclosing class.                                               |
+| **Static Nested Class**    | ❌ Cannot access non-static members directly.<br>✅ Can access them **only if you explicitly create an instance of the enclosing class**. | ✅ Yes (directly)                   | ✅ Yes (but for non-static ones, still needs an enclosing class instance) | - Behaves like a top-level class, just namespaced inside the enclosing class.<br>- **Non-static members cannot be used inside a static thing without making an instance**. |
+
+
+### ⚡sep14
+
+- `https://youtu.be/EfWlJ9-1fVw`
+
+- `#ff2d57`
+
+### ⚡sep19
+
+- `https://youtu.be/EfWlJ9-1fVw`
+
+- #ff2d57
+
+- `https://youtu.be/QHHn0oOGfFg`
+
+- `https://youtu.be/O3BUHwfHf84`
+
+### ⚡sep20
+
+<details>
+
+Skip to content
+Chat history
+
+You said:
+package errorhandling;
+
+import java.util.Arrays;
+
+public class ErrorStack {
+
+	public static void main(String[] args) {
+		
+//		level3();
+		
+		try {
+			level1();
+		}
+		catch(Exception e) {
+			System.out.println(e.toString());
+		}	
+		
+
+	}
+	
+	
+	static void level1() {
+		level2();
+	}
+	static void level2() {
+		level3();
+	}
+	
+	static void level3() {
+		int[] array = new int[5];
+		array[4] = 55;
+//		System.out.println(array[4]+" "+array[0]+" "+array[2]);
+		System.out.println(Arrays.toString(array));
+		System.out.println(array[5]);
+	}
+
 }
 
-class Demo implements Outer, Outer.Inner {
-    public void show() {
-        System.out.println("Outer show()");
+ye example kyu sekkhaty hian 
+
+samjh aa raha ki level1 ka code ultimatley level3 ko run karyga 
+
+
+what thy wan tot teach in this example ??
+ChatGPT said:
+Good question 👍
+
+Tum bilkul sahi samajh rahe ho ki level1() → level2() → level3() call hoti hai, aur ultimately level3() mein jo error hoga, woh propagate hoke main() ke try-catch block mein handle hoga.
+
+Yeh example tumhe basically Exception Propagation aur Stack Trace ka flow sikhata hai.
+
+Breakdown:
+Method chaining (nested calls)
+
+main() → level1() → level2() → level3()
+Yeh intentionally aise banaya gaya hai taake dikhaya ja sake ki agar koi error neeche waale method mein aata hai (yani level3()), toh woh directly sirf wahin handle nahi hota, balki call chain ke through propagate hota hai jab tak koi try-catch use na kare.
+
+Error generation
+
+array[5] access karte waqt ArrayIndexOutOfBoundsException aayega, kyunki array size 5 hai (last index 4 hota hai).
+Matlab deliberately error daala gaya hai taake exception throw ho.
+
+Error handling
+
+main() mein try-catch hai, isiliye exception wahan catch hoga aur System.out.println(e.toString()); print karega.
+Agar try-catch hata dete, toh program crash ho jata aur pura stack trace dikhta.
+
+What the teacher wants to show
+
+Exception kaise throw hote hain ek method se dusre method tak.
+
+Exception ko kahaan handle karna chahiye (jis level pe tum decide karo).
+
+Agar exception handle na karo, toh stack trace kaisa dikhta hai (line numbers ke saath).
+
+Samjhne wali baat:
+Tumne dekha: error level3() mein hai, lekin handle main() mein kiya gaya.
+
+Matlab, tum apne program mein decide kar sakte ho ki exception ko turant handle karna hai ya upper-level method tak propagate hone dena hai.
+
+👉 So short me:
+Yeh example tumhe Exception Propagation aur Stack Trace samjhata hai — error neeche waali method se aata hai aur chain ke through upar tak jata hai jab tak usko pakda (catch) na jaaye.
+
+Chaho toh main tumhare liye ek stack-trace ka output bhi explain kardu line by line, taake aur clear ho jaye?
+
+You said:
+what if agr mei tyr catch keval level3 mei rakh deta  ?
+ChatGPT said:
+Acha sawaal 👌
+
+Agar tum try-catch sirf level3() mein daal do, toh exception wahin catch ho jaayega aur upar propagate nahi hoga.
+
+Example:
+static void level3() {
+    try {
+        int[] array = new int[5];
+        array[4] = 55;
+        System.out.println(Arrays.toString(array));
+        System.out.println(array[5]);  // yaha error aayega
     }
-    public void display() {
-        System.out.println("Inner display()");
+    catch (Exception e) {
+        System.out.println("Caught in level3: " + e.toString());
+    }
+}
+Ab flow kya hoga:
+level3() mein jab array[5] access karoge → ArrayIndexOutOfBoundsException throw hoga.
+
+Kyunki try-catch level3 ke andar hi hai, woh turant catch ho jaayega.
+
+Exception upar (level2, level1, main) tak propagate nahi hoga.
+
+Output kuch aisa hoga:
+
+[0, 0, 0, 0, 55]
+Caught in level3: java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
+Difference (main vs level3 me catch karna)
+Catch in main() → Tumko dikhata hai propagation aur stack trace. Useful when tum central location pe exceptions handle karna chahte ho.
+
+Catch in level3() → Exception wahin handle ho jaata hai, upar methods ko pata bhi nahi chalta. Useful jab tumhe local fix / custom handling karni ho.
+
+👉 So basically:
+
+Agar tum level3 mein catch karte ho, toh woh error wahi consume ho jaata hai.
+
+Agar tum catch sirf main() mein karte ho, toh tumko full propagation ka behaviour samajhne ko milta hai.
+
+Kya tum chahte ho main ek diagram banake stack propagation vs local handling dono scenarios side-by-side samjhaun?
+
+You said:
+aacah what if i apply throws Exception in the main method itself will it catcha nay error??
+ChatGPT said:
+Bahut badiya 👏 — yeh ek subtle point hai jo confuse karta hai.
+
+👉 throws Exception aur try-catch alag cheezein hain.
+
+1. Agar main me throws Exception likho:
+public static void main(String[] args) throws Exception {
+    level1();
+}
+Ab tumne bola: "main bhi exception ko handle nahi karega, balki woh bhi exception ko aage throw karega."
+
+Lekin program ke upar aur koi method nahi hota (kyunki JVM main() se start karti hai).
+
+Matlab agar exception aata hai, woh JVM tak propagate ho jaata hai.
+
+Result: Program crash ho jaayega, aur JVM ek stack trace print karegi.
+
+2. Agar main me try-catch likho:
+public static void main(String[] args) {
+    try {
+        level1();
+    } catch (Exception e) {
+        System.out.println("Caught in main: " + e);
+    }
+}
+Yaha exception catch ho jaata hai.
+
+Program gracefully error handle karta hai.
+
+3. Conclusion:
+throws Exception = "mai handle nahi karunga, aage bhej do."
+
+try-catch = "mai khud handle karunga."
+
+main() ke case me, agar sirf throws likh diya, toh koi aur method upar nahi hota, isiliye error JVM ko propagate hota hai aur woh stack trace dikha kar program band kar deta hai.
+
+⚡ Simple rule yaad rakho:
+
+throws sirf bola jaata hai → "responsibility mujhe nahi leni."
+
+try-catch bola jaata hai → "responsibility yahi par le li gayi."
+
+Chaho toh main tumhe ek side-by-side output dikhaun:
+
+ek case me throws Exception in main,
+
+aur ek case me try-catch in main?
+
+You said:
+lekin file not found valy case mei tou lekhty hain ?
+ChatGPT said:
+Haan 👌 bilkul sahi observe kiya tumne.
+
+Jab hum File handling (ya I/O operations) karte hain, toh aksar main ke signature me aisa likha hota hai:
+
+public static void main(String[] args) throws IOException {
+    FileReader fr = new FileReader("abc.txt");
+    int ch = fr.read();
+    System.out.println((char) ch);
+    fr.close();
+}
+❓ Kyun likhte hain throws IOException yahaan?
+Checked vs Unchecked Exceptions
+
+ArrayIndexOutOfBoundsException (tumhare example ka error) ek unchecked exception hai → JVM enforce nahi karti ke tum usse handle karo.
+
+IOException / FileNotFoundException ek checked exception hai → Compiler tumhe force karta hai ki ya toh:
+
+try-catch use karke handle karo,
+
+ya method signature me throws likhkar bol do “mai handle nahi kar raha, agle ko handle karna hoga.”
+
+Matlab, bina throws IOException ya try-catch ke code compile hi nahi hoga.
+
+In main method
+
+Jab hum practice / short programs likhte hain, toh aksar main() me throws Exception likh dete hain taake baar-baar try-catch na likhna pade.
+
+Iska matlab hota hai: agar exception aaya toh JVM usse catch karegi aur stack trace print karegi.
+
+✅ Ye shortcut hai, lekin production code me best practice hai ke tum khud try-catch karo aur user ko friendly message do.
+
+⚡ Compare karte hain:
+Case 1: throws IOException
+
+public static void main(String[] args) throws IOException {
+    FileReader fr = new FileReader("abc.txt"); // file missing
+}
+👉 Agar file nahi mili, program crash hoga aur JVM bolegi:
+
+Exception in thread "main" java.io.FileNotFoundException: abc.txt (The system cannot find the file specified)
+Case 2: try-catch
+
+public static void main(String[] args) {
+    try {
+        FileReader fr = new FileReader("abc.txt");
+    } catch (IOException e) {
+        System.out.println("File not found! Please check the filename.");
+    }
+}
+👉 Yaha program crash nahi karega, aur tum apna custom message de sakte ho.
+
+📝 Summary:
+Checked exception (e.g. IOException) → compiler tumhe force karega ki handle karo ya declare karo.
+
+Unchecked exception (e.g. ArrayIndexOutOfBoundsException) → compiler force nahi karega, tumhari marzi hai.
+
+main() me throws likhne ka matlab hai: “agar exception aaya toh JVM handle kare (stack trace print karke program terminate kar de).”
+
+👉 Ab bolo: tumhe mai ek table bana kar dikhaun Checked vs Unchecked exceptions ka, taake crystal clear ho jaaye?
+
+You said:
+public static void main(String[] args) throws Exception{ 
+    FileReader fr = new FileReader("abc.txt"); // file missing
+
+if file not found throw new Exception(file not found)  
+}
+
+aisaa nahi kr sakta ??
+ChatGPT said:
+Aha 👌 tumne ek interesting cheez poochi — bilkul kar sakte ho, lekin thoda samajhna zaroori hai.
+
+1. Tumhara code idea:
+public static void main(String[] args) throws Exception {
+    FileReader fr = new FileReader("abc.txt"); // file missing
+    // if file not found throw new Exception("file not found");
+}
+Yaha tum manually throw new Exception(...) likhna chahte ho.
+Par dhyaan do — FileReader constructor khud hi FileNotFoundException throw karta hai (jo ek subclass hai IOException ka, aur ye ek checked exception hai).
+Iska matlab: agar file missing hai, woh automatic exception throw karega — tumhe manually throw likhne ki zaroorat nahi.
+
+2. Lekin agar tum chaho to wrap kar sakte ho
+Tum catch karke apna custom exception throw kar sakte ho:
+
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        try {
+            FileReader fr = new FileReader("abc.txt");
+        } catch (FileNotFoundException e) {
+            throw new Exception("Custom: File not found!");
+        }
+    }
+}
+👉 Ab agar file nahi mili, tumhara custom Exception throw hoga, na ki original FileNotFoundException.
+
+3. Best practice
+Java developers normally aisa karte hain:
+
+Agar tumhe sirf inform karna hai user ko → try-catch and print message.
+
+Agar tum apna custom error type banana chahte ho → apna CustomFileNotFoundException class banao aur throw karo.
+
+Example:
+
+class CustomFileNotFoundException extends Exception {
+    public CustomFileNotFoundException(String msg) {
+        super(msg);
     }
 }
 
-```
+public class Main {
+    public static void main(String[] args) throws CustomFileNotFoundException {
+        try {
+            FileReader fr = new FileReader("abc.txt");
+        } catch (FileNotFoundException e) {
+            throw new CustomFileNotFoundException("abc.txt missing, please provide correct file.");
+        }
+    }
+}
+🔑 Summary
+Tum directly throw new Exception(...) kar sakte ho, lekin wo usually tab hota hai jab tum apna custom error message ya custom exception dena chahte ho.
+
+Agar tum FileReader use kar rahe ho, toh woh khud hi FileNotFoundException throw karega.
+
+Best practice hai checked exception ko ya toh handle karo (try-catch), ya apna custom exception wrap karke throw karo.
+
+👉 Kya tum chahte ho mai ek comparison output dikhaun:
+
+Normal FileNotFoundException
+
+Custom throw new Exception("file not found")
+
+Apna custom exception class?
+
+You said:
+summaries all and make a md file 
+ChatGPT said:
+I’ve created a Markdown file that summarizes everything we discussed.
+You can download it here: java_exceptions_summary.md ✅ 
+
+
+
+No file chosenNo file chosen
+ChatGPT can make mistakes. Check important info. See Cookie Preferences.
+
+
+
+</details>
+
+![alt text](image-3.png)
+
+### ⚡sep21
+- studied wrapper class
+- Scanner nextInt() issue in a menu like program.   
+            
+             /n  buffer reader -- it is called .
+
+-     try-with -resource
+      try(FileReader file = new FileReader()){
+        //gic
+      }
+      catch(IoExceptin e){
+        sysout(e)
+      }
+
+      So we dont have to close() the resource's
+
+
+### sep22
+![alt text](image-4.png)
