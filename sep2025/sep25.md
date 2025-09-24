@@ -573,3 +573,9 @@ ChatGPT can make mistakes. Check important info. See Cookie Preferences.
 
 ### sep22
 ![alt text](image-4.png)
+
+### sep23
+
+- in a while loop `break`vs`retrun`
+
+### sep24
