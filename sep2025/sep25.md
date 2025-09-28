@@ -641,4 +641,57 @@ Java sirf ek wrapper deta hai.
 </details>
 
 
-## ⚡sep25
+## ⚡sep28
+
+📝 Compiler vs Interpreter (Ready Reference)
+<details>
+🔹 Difference Between Compiler and Interpreter
+Feature	Compiler	Interpreter
+Execution Style	Poore program ko ek sath machine code mein convert karta hai	Line by line code execute karta hai
+Speed	Fast (execution ke time)	Slow (kyunki har line turant interpret hoti hai)
+File Requirement	File banana zaroori (source code compile hota hai)	File optional, direct shell/REPL mein likh sakte ho
+Output	Executable file (e.g. .exe, binary)	Directly run, no separate file
+Examples	C, C++	Python, JavaScript
+Hybrid Example	Java → pehle compile hoti hai (bytecode), phir JVM interpret karta hai	
+🔹 Simple "Hello World" Examples (Direct Terminal / Shell)
+1. C (Compiled)
+echo '#include <stdio.h>
+int main(){printf("Hello World\n");return 0;}' > hello.c
+gcc hello.c -o hello && ./hello
+
+2. Java (Compiled + Interpreted via JVM)
+
+Using JShell (Java 9+):
+
+jshell
+System.out.println("Hello World");
+
+3. Python (Interpreted)
+python -c "print('Hello World')"
+
+
+Ya interactive shell:
+
+python
+>>> print("Hello World")
+
+4. Node.js (JavaScript, Interpreted)
+node -e "console.log('Hello World')"
+
+
+Ya interactive shell:
+
+node
+> console.log("Hello World");
+
+
+👉 Summary:
+
+Compiler wali languages → file banana padti hai.
+
+Interpreter wali languages → direct shell/REPL mein code chal jaata hai.
+
+Java thoda hybrid case hai.
+
+
+</details>
