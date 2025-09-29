@@ -695,3 +695,267 @@ Java thoda hybrid case hai.
 
 
 </details>
+
+## ⚡sep29
+
+<details>
+
+```tex
+
+
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez (template)
+% Filled with user-provided content
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[x11names]{xcolor}
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage{fontawesome5} % for \faMobile, \faLinkedin, \faGithub, etc.
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\parskip}{0pt} % add this
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-12pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+% \newcommand{\resumeItem}[1]{
+%   \item\small{#1}
+% }
+
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, itemsep=1pt, parsep=0pt, topsep=1pt]}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% Replace this block in your first template with this one
+
+\begin{center}
+    % Name
+    {\Huge\bfseries Ayush }\\[0.25em]
+    
+   \textbf{{\small Aspiring Full-Stack Developer \textbar\ DevOps Enthusiast}} \\[0.1em]
+
+
+    \textcolor{Blue}\faPhone\enspace 1112223334\quad
+    \textcolor{Blue}\faEnvelope\enspace lion5252@gmail.com \quad
+    \textcolor{Blue}\faHome\enspace Bengluru,India \\[0.1em]
+
+    \textcolor{Blue}{\faGithub}\enspace \href{https://github.com/Ayush-Dube}{github.com/Ayush-Dube} \quad
+    \textcolor{Blue}{\faBehance}\enspace \href{https://www.behance.net/AyushDube1}{behance.net/AyushDube1} \quad
+\end{center}
+
+
+\section{Summary}
+
+Motivated Full-Stack and DevOps learner with a strong foundation in Python, JavaScript, and React, plus hands-on exposure to Git/GitHub, Docker, Kubernetes, Ansible, and AWS basics. Quick learner focused on building efficient web applications and contributing to end-to-end development and deployment.
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{\textbf\textsc{Technical Skills}}
+
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java (learning), JavaScript (ES6+)} \\ 
+     \textbf{Frontend}{: HTML5, CSS3, Responsive design, React (hooks)} \\
+     \textbf{Backend / DB}{: Core Python, SQL; CRUD APIs (Spring Boot in progress)} \\
+     \textbf{Cloud \& DevOps}{: AWS, Docker, Kubernetes, Ansible, Linux, Git/GitHub} \\
+     \textbf{Tools}{: VSCode,Docker Compose,Eclipse}
+    }}
+ \end{itemize}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Responsive Web Projects \href{https://github.com/Ayush-Dube/vital_Web}{\textcolor{gray}{\scriptsize \faLink}}} $|$ HTML, CSS, JavaScript}{}
+\resumeItemListStart
+\resumeItem{Built multiple responsive web pages focusing on CSS Grid, responsive breakpoints and scroll-snap; code and examples in the \texttt{vital\_Web} repository.}
+\resumeItem{Practiced accessible markup and component-driven page sections for mobile-first designs.}
+\resumeItemListEnd
+
+
+
+
+
+
+
+\resumeProjectHeading
+    {\textbf{VTU Portal Frontend \href{https://github.com/Ayush-Dube/vtu2}{\textcolor{gray}{\scriptsize \faLink}}} $|$ React, HTML, CSS, JS}{}
+    \resumeItemListStart
+        \resumeItem{Built a responsive, interactive frontend for a VTU student portal using React.}
+        \resumeItem{Implemented state management with hooks and modular components for reusability.}
+        \resumeItem{Styled pages using CSS and ensured responsiveness across devices.}
+    \resumeItemListEnd
+
+
+
+\resumeProjectHeading
+{\textbf{Python Practice \href{https://github.com/Ayush-Dube/alota_python}{\textcolor{gray}{\scriptsize \faLink}}} $|$ Python}{}
+\resumeItemListStart
+\resumeItem{Practiced Python fundamentals and small utilities; repository \texttt{alota\_python} contains exercises and learning notebooks.}
+\resumeItemListEnd
+
+
+\resumeProjectHeading
+{\textbf{DevOps Labs} $|$ Docker, Kubernetes, Ansible}{}
+\resumeItemListStart
+\resumeItem{Containerized sample applications and experiments with Docker; repository contains Docker setups and practice scripts.}
+\resumeItem{Experimented with local Kubernetes environments and configuration automation (Ansible) for repeatable deployments.}
+\resumeItemListEnd
+
+
+
+
+\resumeProjectHeading
+    {\textbf{Java Fundamentals Repository (D\_Java101) \href{https://github.com/Ayush-Dube/D_Java101/blob/main/theoryJAVA/imp_Points.md}{\textcolor{gray}{\scriptsize \faLink}}} $|$ Java, OOP, Core Concepts}{}
+    \resumeItemListStart
+        \resumeItem{Developed a comprehensive repository to master Java fundamentals, including over 100 code examples and theoretical explanations.}
+        \resumeItem{Organized content into structured modules: basic syntax, object-oriented programming, and practical labs.}
+        \resumeItem{Emphasized hands-on learning with real-world examples and exercises.}
+        \resumeItem{Used Git for version control, ensuring clean project organization and easy navigation.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Freelance 3D Visualizer \& MEP Coordinator}{\small Mar 2021 -- Dec 2023}
+      {Self-Employed}{}
+      \resumeItemListStart
+        \resumeItem{Produced 3D models and MEP coordination drawings for residential and commercial projects; delivered presentation-ready visuals to clients.}
+        \resumeItem{Coordinated design iterations with clients and design teams, ensuring deliverables met specifications and deadlines.}
+      \resumeItemListEnd
+  
+    \resumeSubheading
+      {Amazon Trained Seller Executive}{\small Mar 2018 -- Dec 2020}
+      {Amazon ATSE Program Certified}{}
+      \resumeItemListStart
+        \resumeItem{Assisted sellers in onboarding, cataloging, and order management through Amazon Seller Central.}
+        \resumeItem{Provided guidance on compliance, policies, and sales optimization strategies.}
+      \resumeItemListEnd
+
+    
+
+
+      
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {B.E. Civil Engineering}{2015}
+      {Visvesvaraya Technological University
+}{}
+    \resumeSubheading
+      {M.A. English}{2018}
+      {GITAM University}{}
+  \resumeSubHeadingListEnd
+\end{document}
+
+```
+</details>
