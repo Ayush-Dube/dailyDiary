@@ -959,3 +959,12 @@ Motivated Full-Stack and DevOps learner with a strong foundation in Python, Java
 
 ```
 </details>
+
+## ⚡sep30
+- poA 
+    - add bash
+    - add gifs
+    - add certificatees
+    - real delopyed links
+    - better full stack projects
+    
