@@ -966,5 +966,6 @@ Motivated Full-Stack and DevOps learner with a strong foundation in Python, Java
     - add gifs
     - add certificatees
     - real delopyed links
+    - btr readMe's
     - better full stack projects
     
