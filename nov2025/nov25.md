@@ -191,9 +191,7 @@ Topic                                     |                                     
 ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=flat&logo=mysql&logoColor=white)
 ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=flat&logo=postgresql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=flat&logo=mongodb&logoColor=white)
-![AmazonDynamoDB](https://img.shields.io/badge/Amazon%20DynamoDB-4053D6?style=flat&logo=Amazon%20DynamoDB&logoColor=white)
-<div style="text-align:center;margin:0;border:2px solid red">⛅</div> 
-
+![AmazonDynamoDB](https://img.shields.io/badge/Amazon%20DynamoDB-4053D6?style=flat&logo=Amazon%20DynamoDB&logoColor=white)<!-- <div style="text-align:center;margin:0;border:2px solid red">⛅</div>  -->
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=flat&logo=amazon-aws&logoColor=white)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=flat&logo=docker&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=flat&logo=kubernetes&logoColor=white)
@@ -205,12 +203,39 @@ Topic                                     |                                     
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=flat&logo=git&logoColor=white)
 ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=flat&logo=npm&logoColor=white)
 ![Anaconda](https://img.shields.io/badge/Anaconda-%2344A833.svg?style=flat&logo=anaconda&logoColor=white)
-![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?style=flat&logo=Eclipse&logoColor=blue)
-
-**Design / Creative:**  
+![Eclipse](https://img.shields.io/badge/Eclipse-FE7A16.svg?style=flat&logo=Eclipse&logoColor=blue)<!-- **Design / Creative:**   -->
 ![Adobe](https://img.shields.io/badge/adobe-%23FF0000.svg?style=flat&logo=adobe&logoColor=white)
 ![Adobe Photoshop](https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=flat&logo=adobe%20photoshop&logoColor=white)
 ![Blender](https://img.shields.io/badge/blender-%23F5792A.svg?style=flat&logo=blender&logoColor=white)
 ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=flat&logo=Canva&logoColor=white)
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=flat&logo=figma&logoColor=white)
 [![SketchUp](https://img.shields.io/badge/SketchUp-005F9E?logo=sketchup&logoColor=fff)](#)
+
+
+
+### ⚡nov27
+
+#### backgrounf removal and png for web projects
+
+1. selection tool -->lasso the area 
+2. `Q` for the selectin preview
+3. select and mask
+4. use refine touch for auto refinement 
+5. use overlay opacity , use black white
+6. use manually brush 
+7. use soft, smooth ,radius setting 
+8. click ok ,then in layers section 
+9. ctrl + j 
+10. remove the back layer
+11. save as png (use small size)
+
+#### md image utilisation revision
+
+![rose](./rose.png)
+
+- the aboce image in coded with raw md format , where we donot have control over the size of the image
+<img src="./balidaan.png" style=" height:200px;">
+
+<div style="text-align:center;border:2px solid yellow;display:inline-block;margin-left:50%">
+  <img src="./balidaan.png" style=" height:200px;">
+</div>
