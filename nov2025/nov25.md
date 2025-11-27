@@ -233,9 +233,10 @@ Topic                                     |                                     
 
 ![rose](./rose.png)
 
-- the aboce image in coded with raw md format , where we donot have control over the size of the image
+- the above image in coded with raw md format , where we donot have control over the size of the image.
+
 <img src="./balidaan.png" style=" height:200px;">
 
-<div style="align:center;border:2px solid yellow;display:inline-block;margin-left:50%">
+<div align="center" style="border:2px solid yellow;display:inline-block;margin-left:50%">
   <img src="./balidaan.png" style=" height:200px;">
 </div>
