@@ -237,6 +237,6 @@ Topic                                     |                                     
 
 <img src="./balidaan.png" style=" height:200px;">
 
-<div align="center" style="border:2px solid yellow;display:inline-block;margin-left:50%">
-  <img src="./balidaan.png" style=" height:200px;">
+<div align="center" >
+  <img style="height:100px;border:2px solid yellow;display:inline-block;margin-left:50%" src="./balidaan.png" >
 </div>
