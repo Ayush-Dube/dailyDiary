@@ -236,6 +236,6 @@ Topic                                     |                                     
 - the aboce image in coded with raw md format , where we donot have control over the size of the image
 <img src="./balidaan.png" style=" height:200px;">
 
-<div style="text-align:center;border:2px solid yellow;display:inline-block;margin-left:50%">
+<div style="align:center;border:2px solid yellow;display:inline-block;margin-left:50%">
   <img src="./balidaan.png" style=" height:200px;">
 </div>
