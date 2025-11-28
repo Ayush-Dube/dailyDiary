@@ -238,5 +238,36 @@ Topic                                     |                                     
 <img src="./balidaan.png" style=" height:200px;">
 
 <div align="center" >
-  <img style="height:100px;border:2px solid yellow;display:inline-block;margin-left:50%" src="./balidaan.png" >
+  <img style="height:100px;border:2px solid yellow;display:inline-block;" src="./balidaan.png" >
 </div>
+
+- new observation :- in md format to align things at center use align="center" attribute directly.
+
+```md
+  <div align="center" >
+    <img style="height:100px;border:2px solid yellow;display:inline-block;" src="./balidaan.png" >
+  </div>
+```
+
+- another way is by using the md table(did not worked properly)
+
+
+<!-- | ![Image](./balidaan.png) |
+|:------------------------:|
+| Centered Image          | -->
+
+### ⚡nov28
+
+- next plan of Action 
+  - git
+  - sql 
+  - mongoDB
+  - js
+  - nodejs
+  - express js
+  - react js
+  - MERN project
+  - tailwind
+  - linux , shell
+
+- plan to drop java for now . although i really wanted to continue with it and learn servlet , collection and then spring . But present situation require to go after m stack.  
