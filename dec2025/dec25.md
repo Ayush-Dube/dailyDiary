@@ -15,3 +15,42 @@ plan for dec
 - RESTORE ??
 
 The git restore command is used to restore files in the working directory or the staging area (index) to a previous state.
+
+### ⚡dec6  
+
+- Git me commit history bhi manipulate kar sakte ho AND content history bhi.
+
+```bash
+Git lets you:
+- manipulate FILE CONTENT history  (restore)
+- manipulate COMMIT TIMELINE history (reset, rebase, revert, cherry-pick)
+
+```
+
+### ⚡dec11
+#### alt codes
+>keep alt pressed then  enter number , then release alt            
+```
+• alt + 7  
+≈ alt + 247 
+→ alt + 26
+← alt + 27
+↑ alt + 24
+↓ alt + 25
+↕ alt + 18
+► alt + 16
+◄ alt + 17
+♥ alt + 3
+♦ alt + 4
+♣ alt + 5
+♠ alt + 6
+• alt + 7
+☼ alt +15
+▲ alt + 30
+▼ alt +31
+° alt + 248 (degree)
+π alt + 227
+» alt + 175
+```
+
+### ⚡
