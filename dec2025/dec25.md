@@ -53,4 +53,8 @@ Git lets you:
 » alt + 175
 ```
 
-### ⚡
+### ⚡dec 13 
+
+#### git rebase 
+
+rebase = history rewrite
