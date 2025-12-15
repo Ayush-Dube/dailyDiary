@@ -55,6 +55,16 @@ Git lets you:
 
 ### ⚡dec 13 
 
+
 #### git rebase 
 
 rebase = history rewrite
+
+
+1. ![alt text](image.png)
+
+2. ![alt text](image-1.png)
+
+3. “Git has applied commits up to c4 and is waiting for YOU to edit c5 content.”
+4. ![alt text](image-2.png)  
+Haan 👍 100% commits change ho gaye hain.
