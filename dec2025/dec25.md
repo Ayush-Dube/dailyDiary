@@ -68,3 +68,13 @@ rebase = history rewrite
 3. “Git has applied commits up to c4 and is waiting for YOU to edit c5 content.”
 4. ![alt text](image-2.png)  
 Haan 👍 100% commits change ho gaye hain.
+
+
+### ⚡dec25
+
+SQL LIMIT
+In the previous lessons, you learned to filter data with SQL, using WHERE, AND, OR, and even LIKE with wildcards to refine your results.
+
+However, in large databases, even filtered queries mostly return too many rows. To handle this, SQL provides the LIMIT clause, allowing you to control the number of rows returned.
+
+Suppose you want to display only the first 2 customers from the Customers table. You can use LIMIT as follows:
