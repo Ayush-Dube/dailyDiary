@@ -6,3 +6,14 @@
 ![alt text](image.png)
 
 ![alt text](image-1.png)
+
+
+
+## ⚡feb11
+
+HTTP - hyper text transfer protocol 
+
+first TCP is established then the communication is done with HTTP
+
+http - 80
+https - 443
