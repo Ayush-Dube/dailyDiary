@@ -17,3 +17,10 @@ first TCP is established then the communication is done with HTTP
 
 http - 80
 https - 443
+
+
+## ⚡feb12
+
+jinja
+server template engine {{}}
+`Browser → Flask → Jinja → Final HTML → Browser`
