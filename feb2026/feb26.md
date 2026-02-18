@@ -262,3 +262,136 @@ Decorator = reference replacement + closure.
 
 ================ END OF CORE FOUNDATION =================
 ```
+
+## ⚡feb18
+
+```
+================= BACKEND FUNDAMENTALS =================
+
+1) INTERNET COMMUNICATION LAYERS
+
+User types: http://google.com
+
+Flow:
+
+[Browser]
+    ↓
+(DNS) → Domain → IP Address
+    ↓
+(TCP) → Connection establish (3-way handshake)
+    ↓
+(HTTP) → Structured Request sent
+    ↓
+[Server]
+    ↓
+HTTP Response
+    ↓
+Render in Browser
+
+
+-------------------------------------------------------------
+
+2) ROLE OF EACH COMPONENT
+
+DNS  = Finds IP address (contact book)
+IP   = Address system
+TCP  = Reliable connection (pipe)
+HTTP = Rules/format of communication
+HTML = Document format (content)
+
+Analogy:
+
+HTML = Letter content
+HTTP = Courier format
+TCP  = Road / Phone call
+IP   = House address
+DNS  = Contact book
+
+
+-------------------------------------------------------------
+
+3) RAW TCP vs HTTP
+
+Raw TCP:
+- Just bytes
+- No structure
+- Hard to understand
+
+HTTP:
+- Structured text
+- Standard format
+- Easy to parse
+- Used in web & APIs
+
+
+-------------------------------------------------------------
+
+4) HTTP REQUEST STRUCTURE
+
+Example:
+
+GET /login HTTP/1.1
+Host: example.com
+User-Agent: Chrome
+
+Structure:
+
+1. Request Line
+   → METHOD + PATH + VERSION
+
+2. Headers
+   → Metadata (Host, Content-Type, etc.)
+
+3. Blank Line
+   → Separates headers from body
+
+4. Body (optional)
+   → Mostly used in POST/PUT
+
+
+-------------------------------------------------------------
+
+5) TCP CONNECTION BEHAVIOR
+
+Old (HTTP/1.0):
+- 1 request → 1 response → TCP close
+
+Modern (HTTP/1.1 default):
+- Keep-Alive
+- Multiple request/response on same TCP connection
+- Better performance
+
+
+-------------------------------------------------------------
+
+6) HTTP METHODS (Intent of Request)
+
+GET     → Read data
+POST    → Create data
+PUT     → Replace/update data
+DELETE  → Remove data
+
+Same URL + Different Method = Different action
+
+
+-------------------------------------------------------------
+
+7) VERY IMPORTANT MENTAL MODEL
+
+Browser does NOT send objects.
+Browser sends TEXT over TCP.
+
+Server parses text → builds objects.
+
+Flask:
+- Receives HTTP request
+- Converts to request object
+- Runs Python function
+- Returns HTTP response
+
+Flask does NOT handle DNS or TCP.
+Lower layers handle that.
+
+
+=============================================================
+```
