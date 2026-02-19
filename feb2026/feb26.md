@@ -395,3 +395,33 @@ Lower layers handle that.
 
 =============================================================
 ```
+
+## ⚡feb19
+
+🔥 WHY HTTP Request Structure Matters
+
+As backend developer:
+
+You are not “building websites”.
+
+You are:
+
+Receiving structured text over network  
+Parsing it  
+Running logic  
+Sending structured text back    
+
+🧱 HTTP Request Structure (Basic Form)  
+
+```
+GET /login HTTP/1.1
+Host: example.com
+User-Agent: Chrome
+Accept: text/html
+```
+
+1️⃣ Request Line    
+
+```
+GET /login HTTP/1.1     
+```         
