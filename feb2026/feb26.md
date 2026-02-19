@@ -425,3 +425,79 @@ Accept: text/html
 ```
 GET /login HTTP/1.1     
 ```         
+
+| Part     | Meaning |
+| -------- | ------- |
+| GET      | Method  |
+| /login   | Path    |
+| HTTP/1.1 | Version |
+ 
+2️⃣ Headers    
+```
+Host: example.com
+User-Agent: Chrome
+Accept: text/html
+```
+
+
+Think like:
+
+Envelope ke upar instructions.
+
+Example:
+
+- Host → kaunse server ke liye
+
+- User-Agent → kaun browser hai
+
+- Content-Type → kya data bheja gaya
+
+3️⃣ Blank Line
+
+Very important.
+
+Blank line tells:
+
+>“Headers khatam. Body start.”
+
+
+4️⃣ Body (Optional)
+
+> GET request mein usually body nahi hoti.  
+
+POST request mein body hoti hai.̥
+
+for example:
+ 
+```
+POST /login HTTP/1.1
+Host: example.com
+Content-Type: application/json
+
+{
+  "username": "prakash",
+  "password": "123"
+}
+```
+
+<details>
+<summary>req - res diff</summary>
+
+When the server sends data back to the client, it does so as part of the HTTP response. However, the server's response is not characterized by methods like GET, POST, or DELETE. These HTTP methods are specific to requests made by the client to the server.
+
+The server's response is characterized by:
+
+HTTP Status Codes: These indicate the result of the client's request. For example:
+
+200 OK: The request was successful, and the server is sending the requested data.
+404 Not Found: The requested resource could not be found.
+500 Internal Server Error: The server encountered an error.
+Response Headers: These provide metadata about the response, such as content type, content length, caching policies, etc.
+
+Response Body: This contains the actual data being sent back to the client (e.g., HTML, JSON, XML, or binary data).
+
+In summary, the server doesn't use methods like GET or POST when sending data back. Instead, it sends an HTTP response with a status code, headers, and optionally a body, depending on the client's request and the server's logic.
+
+
+
+</details>
