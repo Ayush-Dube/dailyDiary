@@ -481,7 +481,7 @@ Content-Type: application/json
 ```
 
 <details>
-<summary>req - res diff</summary>
+<summary>Request - Response diff</summary>
 
 When the server sends data back to the client, it does so as part of the HTTP response. However, the server's response is not characterized by methods like GET, POST, or DELETE. These HTTP methods are specific to requests made by the client to the server.
 
@@ -501,3 +501,92 @@ In summary, the server doesn't use methods like GET or POST when sending data ba
 
 
 </details>
+
+
+## ⚡feb20
+
+HTTP methods only part of REQUEST.
+Response mei status code use hoty hain.
+
+so  when u receive requests , as per methods you design you api for different functions .
+
+
+```
+Flask tumhe clean Python interface deta hai.
+
+But underneath:
+
+```
+>### It’s just formatted text over TCP.
+
+🎯 Beginner Confusion Point
+
+Many beginners think:  
+
+Browser sends “object” to server
+
+No.
+
+Browser sends TEXT.
+
+Server converts it into objects.
+
+Important mental model.
+
+
+## ⚡feb21
+
+🧠 Question:  
+
+How does the server know where to send what? 
+
+
+🖥️ What Happens Internally (Important for backend dev)
+
+When request comes:
+
+OS receives packet
+
+OS checks port
+
+Gives data to Flask process
+
+Flask reads:
+
+Method (GET/POST)
+
+Path (/login)
+
+Headers
+
+Body
+
+Flask matches route
+
+Calls function
+
+Function returns response
+
+Flask converts it to HTTP response
+
+OS sends it back 
+
+```
+Client
+   ↓
+Internet
+   ↓
+Server IP
+   ↓
+Port 5000
+   ↓
+Flask App
+   ↓
+Route Match
+   ↓
+Function Call
+   ↓
+Response
+   ↓
+Client
+```
