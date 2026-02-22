@@ -590,3 +590,88 @@ Response
    ↓
 Client
 ```
+
+When I type youtube.com, DNS gives IP.
+Browser sends request to server.
+But how does server know:
+
+1. Which client to send response back to?
+
+2. What response to send?
+
+
+
+
+## ⚡feb22
+
+Why Not Run Flask Directly on 80?
+
+>Port <1024 requires root privileges (Linux rule)
+
+
+```
+================= FLASK HOST CRUX =================
+
+Machine (Device A)
+
+Interfaces:
+-------------------------------------------------
+127.0.0.1        -> Local only (loopback)
+192.168.0.217    -> WiFi LAN IP
+10.x.x.x         -> (maybe VPN)
+-------------------------------------------------
+
+You can bind ONLY to:
+    127.0.0.1
+    192.168.0.217   (your real IP)
+    0.0.0.0         (all interfaces)
+    or nothing (default = 127.0.0.1)
+
+-------------------------------------------------
+What host means:
+
+host = 127.0.0.1
+    -> Server listens only on localhost
+    -> Other WiFi devices CANNOT access
+
+host = 192.168.0.217
+    -> Server listens on WiFi interface
+    -> Same WiFi devices CAN access
+
+host = 0.0.0.0
+    -> Server listens on ALL interfaces
+    -> Local + WiFi devices CAN access
+
+-------------------------------------------------
+What you CANNOT do:
+
+host = 192.168.0.101   (other device IP)
+    -> ERROR
+    -> You can bind only to YOUR machine IP
+
+-------------------------------------------------
+Mental Model:
+
+IP     = Machine address
+Port   = Program number
+host   = Which machine address server attaches to
+
+Example:
+
+Device B types:
+    http://192.168.0.217:8000
+
+Router sees:
+    destination = 192.168.0.217
+    -> forwards inside LAN
+    -> Flask handles request
+
+==================================================
+Learning Rule:
+Use this while learning:
+
+app.run(host="0.0.0.0", port=8000)
+
+Then move on.
+==================================================
+```
