@@ -675,3 +675,25 @@ app.run(host="0.0.0.0", port=8000)
 Then move on.
 ==================================================
 ```
+
+## ⚡feb23
+
+```
+Browser (Device B)
+    |
+    | 1. TCP connect
+    |
+Device A OS
+    |
+    | 2. Pass to Flask
+    |
+Flask
+    |
+    | 3. Route match
+    |
+Flask Response
+    |
+OS sends back
+    |
+Browser renders page
+```
