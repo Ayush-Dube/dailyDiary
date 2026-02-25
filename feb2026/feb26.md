@@ -697,3 +697,141 @@ OS sends back
     |
 Browser renders page
 ```
+
+## ⚡feb25
+
+
+```
+
+==================================================
+            NETWORKING FOUNDATION NOTES
+==================================================
+
+1️⃣ IP ADDRESS
+----------------------------------
+- IPv4 = 32 bits
+- Written as 4 decimal octets (0–255)
+- Format: x.x.x.x
+- Actually binary number, decimal sirf readable form
+
+Example:
+192.168.1.10
+= 11000000.10101000.00000001.00001010
+
+
+2️⃣ CIDR
+----------------------------------
+CIDR = Classless Inter-Domain Routing
+
+Format:
+IP/CIDR
+
+Example:
+10.0.5.0/24
+
+Meaning:
+- First 24 bits = Network part
+- Remaining 8 bits = Host part
+
+Formula:
+Host bits = 32 - CIDR
+Total IPs  = 2^(host bits)
+Usable     = Total - 2
+(Network + Broadcast reserved)
+
+
+3️⃣ NETWORK vs HOST
+----------------------------------
+IP = [Network bits] + [Host bits]
+
+Network bits:
+- Identify group
+- Used for routing decision
+
+Host bits:
+- Identify device inside that network
+
+
+Example:
+10.0.5.23/24
+
+Network = 10.0.5.0
+Host    = .23
+
+
+4️⃣ SUBNETTING
+----------------------------------
+Big network → divide into smaller networks
+
+Example:
+10.0.0.0/16
+
+Can divide into:
+10.0.1.0/24
+10.0.2.0/24
+etc.
+
+
+5️⃣ PRIVATE IP RANGES
+----------------------------------
+10.0.0.0/8
+172.16.0.0/12
+192.168.0.0/16
+
+- Not routable on internet
+
+
+6️⃣ NAT (Port Address Translation)
+----------------------------------
+
+Purpose:
+Many private IPs → 1 public IP
+
+Example mapping:
+
+Public IP: 3.92.100.5
+
+3.92.100.5:40001 → 10.0.1.10:53001
+3.92.100.5:40002 → 10.0.1.11:53005
+
+NAT is:
+- Stateful (keeps connection table in RAM)
+- Not persistent (reboot → mapping lost)
+
+
+7️⃣ ROUTING LOGIC
+----------------------------------
+
+Router selects route using:
+
+1) Longest Prefix Match
+2) Metric (if tie)
+3) Administrative distance
+
+Example:
+
+Routes:
+10.0.0.0/8
+10.0.5.0/24
+
+Destination:
+10.0.5.23
+
+Chosen route:
+10.0.5.0/24   (more specific)
+
+
+8️⃣ DEFAULT ROUTE
+----------------------------------
+
+0.0.0.0/0
+
+Meaning:
+"If nothing matches, send here."
+
+
+==================================================
+PROGRESS: 50%
+==================================================
+
+```
