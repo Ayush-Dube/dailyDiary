@@ -835,3 +835,31 @@ PROGRESS: 50%
 ==================================================
 
 ```
+
+## ⚡feb26
+
+🧠 2️⃣ WHY Subnet?
+
+Soch:
+
+Tere paas ek company hai.
+
+Total 1000 machines.
+
+Agar sab ek hi network me daal de:
+
+```
+10.0.0.0/16
+```
+
+Toh problem:
+
+Har machine har machine ko broadcast karegi
+
+Traffic heavy hoga
+
+Security zero
+
+Fault isolate nahi kar paoge
+
+Isliye network ko todte hain.
