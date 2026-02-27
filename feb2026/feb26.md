@@ -863,3 +863,27 @@ Security zero
 Fault isolate nahi kar paoge
 
 Isliye network ko todte hain.
+
+
+## ⚡feb27
+`10.0.0.0/16` -->VPC
+```
+10.0.1.0/24  → Web servers
+10.0.2.0/24  → App servers
+10.0.3.0/24  → DB servers
+```
+
+🧠 3️⃣ Subnet Actually Karta Kya Hai?
+
+Subnet:
+
+👉 Network bits badha deta hai  
+👉 Host bits kam kar deta hai
+
+Iska effect:  
+
+- Group size chhota ho jata hai  
+
+- Broadcast domain chhota ho jata hai  
+
+- Control badhta hai  
