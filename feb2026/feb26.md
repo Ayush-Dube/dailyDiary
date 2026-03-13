@@ -889,7 +889,7 @@ Iska effect:
 - Control badhta hai  
 
 
-
+```
 
 ====================================================
         SUBNETTING – CONFUSION → CLARITY
@@ -1007,3 +1007,4 @@ CIDR = Box Size
 Mask = Boundary Rule
 Block Size = Jump Distance
 ====================================================
+```
