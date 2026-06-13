@@ -17,4 +17,21 @@
 
 
 
+## june13
+
+**Ideal tag position**
+```html
+<!DOCTYPE html>
+<html>
+<head> <!-- INSIDE HEAD-->
+  <style>/* CSS here */</style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HTML content -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+```
 
