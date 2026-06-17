@@ -20,6 +20,27 @@
 ## june13
 
 **Ideal tag position**
+
+
+```html
+<!DOCTYPE html>
+<html>
+<head> <!-- INSIDE HEAD-->
+  <style>/* CSS here */</style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HTML content -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+```
+
+
+
+
+## ⚡june 17
 ```html
 <svg width="200" height="400" viewBox="0 0 200 400">
 
