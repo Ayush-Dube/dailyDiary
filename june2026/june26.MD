@@ -115,3 +115,88 @@
 
 </svg>
 ```
+
+## june21
+
+<details><summary>SVG</summary>
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #tt{
+            transition: transform 1s ease;
+        }
+        #tt:hover{
+            transform:  translateX(500px); 
+        }
+    </style>
+</head>
+
+<body>
+    <svg height="500" width="500" viewBox="0 0 500 500" style="border: 2px solid black;background-color:#5ab5ff">
+
+        <circle cx="250" cy="250" r="210" fill="#e06534" />
+        <circle cx="250" cy="250" r="150" fill="white" />
+        <circle cx="250" cy="250" r="80" fill="#2c6837" />
+
+    </svg>
+    <hr>
+    <svg height="200" width="200" style="border: 2px solid black;">
+        <rect x="0" y="0" width="100" height="100" fill="blue" />
+        <rect x="100" y="0" width="100" height="100" fill="green" />
+        <rect x="0" y="100" width="100" height="100" fill="red" />
+        <rect x="100" y="100" width="100" height="100" fill="yellow" />
+
+    </svg>
+    <hr>
+    <!-- VIEWBOX -->
+    <svg height="200" width="200" viewBox="80 80 100 100">
+
+        <rect x="0" y="0" width="100" height="100" fill="blue" />
+        <rect x="100" y="0" width="100" height="100" fill="green" />
+        <rect x="0" y="100" width="100" height="100" fill="red" />
+        <rect x="100" y="100" width="100" height="100" fill="#ffff00" />
+
+    </svg>
+
+    <hr>
+
+    <svg id="tt" height="400" width="400" viewBox="0 0 400 400" style="border: 3px GREY solid;">   
+        <polygon stroke="orange" fill="gold"  stroke-width="5"
+            points=
+            "
+            0,200
+            160,160
+            200,0
+            240,160
+            400,200
+            240,240
+            200,400
+            160,240
+            "/>
+
+            <polyline stroke="blue" stroke-width="4" points="50,50 60,30 60,100" fill="none"/>    
+
+    </svg>
+    <!-- I did this myself -->
+
+    <br>
+    <br>
+    <svg height="500" width="800" style="border: 2px blue solid;background-color:azure">
+
+        <ellipse/>
+    </svg>
+
+
+
+</body>
+
+</html>
+```
+</details>
