@@ -200,3 +200,122 @@
 </html>
 ```
 </details>
+
+
+## june25
+
+
+<details>
+
+
+```
+╔════════════════════════════════════════════════════════════════════╗
+║        💡 JavaScript Boolean + ! (NOT) + Bulb Toggle Summary      ║
+╚════════════════════════════════════════════════════════════════════╝
+
+1️⃣ Boolean
+   ├─ true  ✅
+   └─ false ❌
+
+2️⃣ if Statement
+   ├─ if(expression)
+   ├─ expression → evaluates to true/false
+   ├─ true  → block runs ▶️
+   └─ false → block skipped ⏭️
+
+3️⃣ NOT Operator (!)
+   ├─ !true  → false
+   ├─ !false → true
+   └─ Meaning: "Give me the opposite value." 🔄
+
+4️⃣ Equivalent Conditions
+   ├─ if(a)        ≡ if(a === true)
+   └─ if(!a)       ≡ if(a === false)
+
+5️⃣ Bulb State 💡
+   Initial:
+      on = false   (Bulb OFF)
+
+   First Click:
+      on == false ✅
+      → Turn bulb ON
+      → on = true
+
+   Second Click:
+      on == true
+      → Turn bulb OFF
+      → on = false
+
+6️⃣ Shortcut (Toggle)
+   Instead of:
+
+      if(on === false)
+          on = true;
+      else
+          on = false;
+
+   Use:
+
+      on = !on;
+
+   Because:
+      false → true
+      true  → false
+
+7️⃣ Golden Rules ⭐
+   🟢 if(a)
+      = "If a is true."
+
+   🔴 if(!a)
+      = "If a is false."
+
+   🔄 a = !a
+      = "Flip (toggle) the value of a."
+
+────────────────────────────────────────────────────────────────────
+
+🧠 Mental Reading Trick
+
+if(a)
+👉 "Is a true?"
+
+if(!a)
+👉 "Is a false?"
+
+a = !a
+👉 "Make a the opposite of what it is."
+
+────────────────────────────────────────────────────────────────────
+
+🎯 Remember:
+`!` DOES NOT mean "true".
+`!` means "NOT" (the opposite value).
+
+```
+
+
+
+</details>
+
+
+## ⚡june26
+
+- The `**` operator computes the exponential (power) of a number
+
+
+## ⚡june29
+- a python function can hold variables with it.
+
+```python
+def greet():
+      print("Hi")
+
+
+
+greet.language = "English"
+
+print(greet.language)
+#English
+```
+
+Totally works
